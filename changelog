@@ -1,0 +1,1527 @@
+2024-08-13:
+  * New upstream microcode datafile 20240813 (second release)
+    - Mitigations for INTEL-SA-01083 (CVE-2024-24853)
+      Incorrect behavior order in transition between executive monitor and SMI
+      transfer monitor (STM) in some Intel Processors may allow a privileged
+      user to potentially enable escalation of privilege via local access.
+    - Mitigations for INTEL-SA-01118 (CVE-2024-25939)
+      Mirrored regions with different values in 3rd Generation Intel Xeon
+      Scalable Processors may allow a privileged user to potentially enable
+      denial of service via local access.
+    - Mitigations for INTEL-SA-01100 (CVE-2024-24980)
+      Protection mechanism failure in some 3rd, 4th, and 5th Generation Intel
+      Xeon Processors may allow a privileged user to potentially enable
+      escalation of privilege via local access.
+    - Mitigations for INTEL-SA-01038 (CVE-2023-42667)
+      Improper isolation in the Intel Core Ultra Processor stream cache
+      mechanism may allow an authenticated user to potentially enable
+      escalation of privilege via local access.
+    - Mitigations for INTEL-SA-01046 (CVE-2023-49141)
+      Improper isolation in some Intel® Processors stream cache mechanism may
+      allow an authenticated user to potentially enable escalation of
+      privilege via local access.
+    - Fix for unspecified functional issues on several processor models
+  * Updated microcodes:
+    sig 0x00050657, pf_mask 0xbf, 2024-03-01, rev 0x5003707, size 39936
+    sig 0x0005065b, pf_mask 0xbf, 2024-04-01, rev 0x7002904, size 30720
+    sig 0x000606a6, pf_mask 0x87, 2024-04-01, rev 0xd0003e7, size 308224
+    sig 0x000606c1, pf_mask 0x10, 2024-04-03, rev 0x10002b0, size 300032
+    sig 0x000706e5, pf_mask 0x80, 2024-02-15, rev 0x00c6, size 114688
+    sig 0x000806c1, pf_mask 0x80, 2024-02-15, rev 0x00b8, size 112640
+    sig 0x000806c2, pf_mask 0xc2, 2024-02-15, rev 0x0038, size 99328
+    sig 0x000806d1, pf_mask 0xc2, 2024-02-15, rev 0x0052, size 104448
+    sig 0x000806e9, pf_mask 0xc0, 2024-02-01, rev 0x00f6, size 106496
+    sig 0x000806e9, pf_mask 0x10, 2024-02-01, rev 0x00f6, size 106496
+    sig 0x000806ea, pf_mask 0xc0, 2024-02-01, rev 0x00f6, size 105472
+    sig 0x000806eb, pf_mask 0xd0, 2024-02-01, rev 0x00f6, size 106496
+    sig 0x000806ec, pf_mask 0x94, 2024-02-05, rev 0x00fc, size 106496
+    sig 0x00090661, pf_mask 0x01, 2024-04-05, rev 0x001a, size 20480
+    sig 0x000906ea, pf_mask 0x22, 2024-02-01, rev 0x00f8, size 105472
+    sig 0x000906eb, pf_mask 0x02, 2024-02-01, rev 0x00f6, size 106496
+    sig 0x000906ec, pf_mask 0x22, 2024-02-01, rev 0x00f8, size 106496
+    sig 0x000906ed, pf_mask 0x22, 2024-02-05, rev 0x0100, size 106496
+    sig 0x000a0652, pf_mask 0x20, 2024-02-01, rev 0x00fc, size 97280
+    sig 0x000a0653, pf_mask 0x22, 2024-02-01, rev 0x00fc, size 98304
+    sig 0x000a0655, pf_mask 0x22, 2024-02-01, rev 0x00fc, size 97280
+    sig 0x000a0660, pf_mask 0x80, 2024-02-01, rev 0x00fe, size 97280
+    sig 0x000a0661, pf_mask 0x80, 2024-02-01, rev 0x00fc, size 97280
+    sig 0x000a0671, pf_mask 0x02, 2024-03-07, rev 0x0062, size 108544
+    sig 0x000a06a4, pf_mask 0xe6, 2024-04-15, rev 0x001e, size 137216
+
+2024-05-31:
+  * New upstream microcode datafile 20240531
+    - Fix unspecified functional issues on Pentium Silver N/J5xxx,
+      Celeron N/J4xxx
+  * Updated Microcodes:
+    sig 0x000706a1, pf_mask 0x01, 2024-04-19, rev 0x0042, size 76800
+
+2024-05-14:
+  * New upstream microcode datafile 20240514
+    - Mitigations for INTEL-SA-01051 (CVE-2023-45733)
+      Hardware logic contains race conditions in some Intel Processors may
+      allow an authenticated user to potentially enable partial information
+      disclosure via local access.
+    - Mitigations for INTEL-SA-01052 (CVE-2023-46103)
+      Sequence of processor instructions leads to unexpected behavior in
+      Intel Core Ultra Processors may allow an authenticated user to
+      potentially enable denial of service via local access.
+    - Mitigations for INTEL-SA-01036 (CVE-2023-45745,  CVE-2023-47855)
+      Improper input validation in some Intel TDX module software before
+      version 1.5.05.46.698 may allow a privileged user to potentially enable
+      escalation of privilege via local access.
+    - Fix for unspecified functional issues on 4th gen and 5th gen Xeon
+      Scalable, 12th, 13th and 14th gen Intel Core processors, as well as for
+      Core i3 N-series processors.
+  * Updated microcodes:
+    sig 0x000806f8, pf_mask 0x87, 2024-02-05, rev 0x2b0005c0, size 581632
+    sig 0x000806f7, pf_mask 0x87, 2024-02-05, rev 0x2b0005c0
+    sig 0x000806f6, pf_mask 0x87, 2024-02-05, rev 0x2b0005c0
+    sig 0x000806f5, pf_mask 0x87, 2024-02-05, rev 0x2b0005c0
+    sig 0x000806f4, pf_mask 0x87, 2024-02-05, rev 0x2b0005c0
+    sig 0x000806f8, pf_mask 0x10, 2024-02-05, rev 0x2c000390, size 614400
+    sig 0x000806f6, pf_mask 0x10, 2024-02-05, rev 0x2c000390
+    sig 0x000806f5, pf_mask 0x10, 2024-02-05, rev 0x2c000390
+    sig 0x000806f4, pf_mask 0x10, 2024-02-05, rev 0x2c000390
+    sig 0x00090672, pf_mask 0x07, 2023-12-05, rev 0x0035, size 224256
+    sig 0x00090675, pf_mask 0x07, 2023-12-05, rev 0x0035
+    sig 0x000b06f2, pf_mask 0x07, 2023-12-05, rev 0x0035
+    sig 0x000b06f5, pf_mask 0x07, 2023-12-05, rev 0x0035
+    sig 0x000906a3, pf_mask 0x80, 2023-12-05, rev 0x0433, size 222208
+    sig 0x000906a4, pf_mask 0x80, 2023-12-05, rev 0x0433
+    sig 0x000906a4, pf_mask 0x40, 2023-12-07, rev 0x0007, size 119808
+    sig 0x000b0671, pf_mask 0x32, 2024-01-25, rev 0x0123, size 215040
+    sig 0x000b06e0, pf_mask 0x11, 2023-12-07, rev 0x0017, size 138240
+    sig 0x000c06f2, pf_mask 0x87, 2024-02-05, rev 0x21000230, size 552960
+    sig 0x000c06f1, pf_mask 0x87, 2024-02-05, rev 0x21000230
+
+2024-03-12:
+  * New upstream microcode datafile 20240312
+    - Mitigations for INTEL-SA-INTEL-SA-00972 (CVE-2023-39368):
+      Protection mechanism failure of bus lock regulator for some Intel
+      Processors may allow an unauthenticated user to potentially enable
+      denial of service via network access.
+    - Mitigations for INTEL-SA-INTEL-SA-00982 (CVE-2023-38575):
+      Non-transparent sharing of return predictor targets between contexts in
+      some Intel Processors may allow an authorized user to potentially
+      enable information disclosure via local access.  Affects SGX as well.
+    - Mitigations for INTEL-SA-INTEL-SA-00898 (CVE-2023-28746), aka RFDS:
+      Information exposure through microarchitectural state after transient
+      execution from some register files for some Intel Atom Processors and
+      E-cores of Intel Core Processors may allow an authenticated user to
+      potentially enable information disclosure via local access.  Enhances
+      VERW instruction to clear stale register buffers.  Affects SGX as well.
+      Requires kernel update to be effective.
+    - Mitigations for INTEL-SA-INTEL-SA-00960 (CVE-2023-22655), aka TECRA:
+      Protection mechanism failure in some 3rd and 4th Generation Intel Xeon
+      Processors when using Intel SGX or Intel TDX may allow a privileged
+      user to potentially enable escalation of privilege via local access.
+      NOTE: effective only when loaded by firmware.  Allows SMM firmware to
+      attack SGX/TDX.
+    - Mitigations for INTEL-SA-INTEL-SA-01045 (CVE-2023-43490):
+      Incorrect calculation in microcode keying mechanism for some Intel
+      Xeon D Processors with Intel SGX may allow a privileged user to
+      potentially enable information disclosure via local access.
+  * Fixes for other unspecified functional issues on many processors
+  * Updated microcodes:
+    sig 0x00050653, pf_mask 0x97, 2023-07-28, rev 0x1000191, size 36864
+    sig 0x00050656, pf_mask 0xbf, 2023-07-28, rev 0x4003605, size 38912
+    sig 0x00050657, pf_mask 0xbf, 2023-07-28, rev 0x5003605, size 37888
+    sig 0x0005065b, pf_mask 0xbf, 2023-08-03, rev 0x7002802, size 30720
+    sig 0x00050665, pf_mask 0x10, 2023-08-03, rev 0xe000015, size 23552
+    sig 0x000506f1, pf_mask 0x01, 2023-10-05, rev 0x003e, size 11264
+    sig 0x000606a6, pf_mask 0x87, 2023-09-14, rev 0xd0003d1, size 307200
+    sig 0x000606c1, pf_mask 0x10, 2023-12-05, rev 0x1000290, size 299008
+    sig 0x000706a1, pf_mask 0x01, 2023-08-25, rev 0x0040, size 76800
+    sig 0x000706a8, pf_mask 0x01, 2023-08-25, rev 0x0024, size 76800
+    sig 0x000706e5, pf_mask 0x80, 2023-09-14, rev 0x00c4, size 114688
+    sig 0x000806c1, pf_mask 0x80, 2023-09-13, rev 0x00b6, size 111616
+    sig 0x000806c2, pf_mask 0xc2, 2023-09-13, rev 0x0036, size 98304
+    sig 0x000806d1, pf_mask 0xc2, 2023-09-13, rev 0x0050, size 104448
+    sig 0x000806ec, pf_mask 0x94, 2023-07-16, rev 0x00fa, size 106496
+    sig 0x000806f8, pf_mask 0x87, 2024-01-03, rev 0x2b000590, size 579584
+    sig 0x000806f7, pf_mask 0x87, 2024-01-03, rev 0x2b000590
+    sig 0x000806f6, pf_mask 0x87, 2024-01-03, rev 0x2b000590
+    sig 0x000806f5, pf_mask 0x87, 2024-01-03, rev 0x2b000590
+    sig 0x000806f4, pf_mask 0x87, 2024-01-03, rev 0x2b000590
+    sig 0x00090661, pf_mask 0x01, 2023-09-26, rev 0x0019, size 20480
+    sig 0x00090672, pf_mask 0x07, 2023-09-19, rev 0x0034, size 224256
+    sig 0x00090675, pf_mask 0x07, 2023-09-19, rev 0x0034
+    sig 0x000b06f2, pf_mask 0x07, 2023-09-19, rev 0x0034
+    sig 0x000b06f5, pf_mask 0x07, 2023-09-19, rev 0x0034
+    sig 0x000906a3, pf_mask 0x80, 2023-09-19, rev 0x0432, size 222208
+    sig 0x000906a4, pf_mask 0x80, 2023-09-19, rev 0x0432
+    sig 0x000906c0, pf_mask 0x01, 2023-09-26, rev 0x24000026, size 20480
+    sig 0x000906e9, pf_mask 0x2a, 2023-09-28, rev 0x00f8, size 108544
+    sig 0x000906ea, pf_mask 0x22, 2023-07-26, rev 0x00f6, size 105472
+    sig 0x000906ec, pf_mask 0x22, 2023-07-26, rev 0x00f6, size 106496
+    sig 0x000906ed, pf_mask 0x22, 2023-07-27, rev 0x00fc, size 106496
+    sig 0x000a0652, pf_mask 0x20, 2023-07-16, rev 0x00fa, size 97280
+    sig 0x000a0653, pf_mask 0x22, 2023-07-16, rev 0x00fa, size 97280
+    sig 0x000a0655, pf_mask 0x22, 2023-07-16, rev 0x00fa, size 97280
+    sig 0x000a0660, pf_mask 0x80, 2023-07-16, rev 0x00fa, size 97280
+    sig 0x000a0661, pf_mask 0x80, 2023-07-16, rev 0x00fa, size 96256
+    sig 0x000a0671, pf_mask 0x02, 2023-09-14, rev 0x005e, size 108544
+    sig 0x000b0671, pf_mask 0x32, 2023-12-14, rev 0x0122, size 215040
+    sig 0x000b06a2, pf_mask 0xe0, 2023-12-07, rev 0x4121, size 220160
+    sig 0x000b06a3, pf_mask 0xe0, 2023-12-07, rev 0x4121
+    sig 0x000b06e0, pf_mask 0x11, 2023-09-25, rev 0x0015, size 138240
+  * New microcodes:
+    sig 0x000a06a4, pf_mask 0xe6, 2024-01-03, rev 0x001c, size 136192
+    sig 0x000b06a8, pf_mask 0xe0, 2023-12-07, rev 0x4121, size 220160
+    sig 0x000c06f2, pf_mask 0x87, 2023-11-20, rev 0x21000200, size 549888
+    sig 0x000c06f1, pf_mask 0x87, 2023-11-20, rev 0x21000200
+
+2023-11-14:
+  * New upstream microcode datafile 20231114
+    Mitigations for "reptar", INTEL-SA-00950 (CVE-2023-23583)
+    Sequence of processor instructions leads to unexpected behavior for some
+    Intel(R) Processors, may allow an authenticated user to potentially enable
+    escalation of privilege and/or information disclosure and/or denial of
+    service via local access.
+    Note: "reptar" on 4th gen Xeon Scalable (sig 0x806f8 pfm 0x87), 12th gen
+    Core mobile (sig 0x906a4 pfm 0x80), 13th gen Core desktop (sig 0xb0671 pfm
+    0x01) were already mitigated by a previous microcode update.
+  * Fixes for other unspecified functional issues
+  * Updated microcodes:
+    sig 0x000606a6, pf_mask 0x87, 2023-09-01, rev 0xd0003b9, size 299008
+    sig 0x000606c1, pf_mask 0x10, 2023-09-08, rev 0x1000268, size 290816
+    sig 0x000706e5, pf_mask 0x80, 2023-09-03, rev 0x00c2, size 113664
+    sig 0x000806c1, pf_mask 0x80, 2023-09-07, rev 0x00b4, size 111616
+    sig 0x000806c2, pf_mask 0xc2, 2023-09-07, rev 0x0034, size 98304
+    sig 0x000806d1, pf_mask 0xc2, 2023-09-07, rev 0x004e, size 104448
+    sig 0x000806f8, pf_mask 0x87, 2023-06-16, rev 0x2b0004d0, size 572416
+    sig 0x000806f8, pf_mask 0x87, 2023-06-16, rev 0x2b0004d0
+    sig 0x000806f7, pf_mask 0x87, 2023-06-16, rev 0x2b0004d0
+    sig 0x000806f6, pf_mask 0x87, 2023-06-16, rev 0x2b0004d0
+    sig 0x000806f5, pf_mask 0x87, 2023-06-16, rev 0x2b0004d0
+    sig 0x000806f4, pf_mask 0x87, 2023-06-16, rev 0x2b0004d0
+    sig 0x000806f8, pf_mask 0x10, 2023-06-26, rev 0x2c000290, size 605184
+    sig 0x000806f8, pf_mask 0x10, 2023-06-26, rev 0x2c000290
+    sig 0x000806f6, pf_mask 0x10, 2023-06-26, rev 0x2c000290
+    sig 0x000806f5, pf_mask 0x10, 2023-06-26, rev 0x2c000290
+    sig 0x000806f4, pf_mask 0x10, 2023-06-26, rev 0x2c000290
+    sig 0x00090672, pf_mask 0x07, 2023-06-07, rev 0x0032, size 222208
+    sig 0x00090672, pf_mask 0x07, 2023-06-07, rev 0x0032
+    sig 0x00090675, pf_mask 0x07, 2023-06-07, rev 0x0032
+    sig 0x000b06f2, pf_mask 0x07, 2023-06-07, rev 0x0032
+    sig 0x000b06f5, pf_mask 0x07, 2023-06-07, rev 0x0032
+    sig 0x000906a3, pf_mask 0x80, 2023-06-07, rev 0x0430, size 220160
+    sig 0x000906a3, pf_mask 0x80, 2023-06-07, rev 0x0430
+    sig 0x000906a4, pf_mask 0x80, 2023-06-07, rev 0x0430
+    sig 0x000906a4, pf_mask 0x40, 2023-05-05, rev 0x0005, size 117760
+    sig 0x000a0671, pf_mask 0x02, 2023-09-03, rev 0x005d, size 104448
+    sig 0x000b0671, pf_mask 0x32, 2023-08-29, rev 0x011d, size 210944
+    sig 0x000b06a2, pf_mask 0xe0, 2023-08-30, rev 0x411c, size 216064
+    sig 0x000b06a2, pf_mask 0xe0, 2023-08-30, rev 0x411c
+    sig 0x000b06a3, pf_mask 0xe0, 2023-08-30, rev 0x411c
+    sig 0x000b06e0, pf_mask 0x11, 2023-06-26, rev 0x0012, size 136192
+
+2023-08-08:
+  * New upstream microcode datafile 20230808
+    Mitigations for "Downfall" INTEL-SA-00828 (CVE-2022-40982),
+    INTEL-SA-00836 (CVE-2023-23908) and INTEL-SA-00837 (CVE-2022-41804)
+  * Mitigations for "reptar" on a few processors, refer to the 2023-11-14
+    entry for details.  This information was disclosed in 2023-11-14.
+  * Updated microcodes:
+    sig 0x00050653, pf_mask 0x97, 2023-03-23, rev 0x1000181, size 36864
+    sig 0x00050654, pf_mask 0xb7, 2023-03-06, rev 0x2007006, size 44032
+    sig 0x00050656, pf_mask 0xbf, 2023-03-17, rev 0x4003604, size 38912
+    sig 0x00050657, pf_mask 0xbf, 2023-03-17, rev 0x5003604, size 38912
+    sig 0x0005065b, pf_mask 0xbf, 2023-03-21, rev 0x7002703, size 30720
+    sig 0x000606a6, pf_mask 0x87, 2023-03-30, rev 0xd0003a5, size 297984
+    sig 0x000706e5, pf_mask 0x80, 2023-02-26, rev 0x00bc, size 113664
+    sig 0x000806c1, pf_mask 0x80, 2023-02-27, rev 0x00ac, size 111616
+    sig 0x000806c2, pf_mask 0xc2, 2023-02-27, rev 0x002c, size 98304
+    sig 0x000806d1, pf_mask 0xc2, 2023-02-27, rev 0x0046, size 103424
+    sig 0x000806e9, pf_mask 0xc0, 2023-02-22, rev 0x00f4, size 106496
+    sig 0x000806e9, pf_mask 0x10, 2023-02-23, rev 0x00f4, size 105472
+    sig 0x000806ea, pf_mask 0xc0, 2023-02-23, rev 0x00f4, size 105472
+    sig 0x000806eb, pf_mask 0xd0, 2023-02-23, rev 0x00f4, size 106496
+    sig 0x000806ec, pf_mask 0x94, 2023-02-26, rev 0x00f8, size 106496
+    sig 0x000806f8, pf_mask 0x87, 2023-05-09, rev 0x2b0004b1, size 572416
+    sig 0x000806f7, pf_mask 0x87, 2023-05-09, rev 0x2b0004b1
+    sig 0x000806f6, pf_mask 0x87, 2023-05-09, rev 0x2b0004b1
+    sig 0x000806f5, pf_mask 0x87, 2023-05-09, rev 0x2b0004b1
+    sig 0x000806f4, pf_mask 0x87, 2023-05-09, rev 0x2b0004b1
+    sig 0x000806f8, pf_mask 0x10, 2023-05-15, rev 0x2c000271, size 605184
+    sig 0x000806f6, pf_mask 0x10, 2023-05-15, rev 0x2c000271
+    sig 0x000806f5, pf_mask 0x10, 2023-05-15, rev 0x2c000271
+    sig 0x000806f4, pf_mask 0x10, 2023-05-15, rev 0x2c000271
+    sig 0x00090672, pf_mask 0x07, 2023-04-18, rev 0x002e, size 220160
+    sig 0x00090675, pf_mask 0x07, 2023-04-18, rev 0x002e
+    sig 0x000b06f2, pf_mask 0x07, 2023-04-18, rev 0x002e
+    sig 0x000b06f5, pf_mask 0x07, 2023-04-18, rev 0x002e
+    sig 0x000906a3, pf_mask 0x80, 2023-04-18, rev 0x042c, size 219136
+    sig 0x000906a4, pf_mask 0x80, 2023-04-18, rev 0x042c
+    sig 0x000906e9, pf_mask 0x2a, 2023-02-23, rev 0x00f4, size 108544
+    sig 0x000906ea, pf_mask 0x22, 2023-02-23, rev 0x00f4, size 104448
+    sig 0x000906eb, pf_mask 0x02, 2023-02-23, rev 0x00f4, size 106496
+    sig 0x000906ec, pf_mask 0x22, 2023-02-23, rev 0x00f4, size 105472
+    sig 0x000906ed, pf_mask 0x22, 2023-02-27, rev 0x00fa, size 106496
+    sig 0x000a0652, pf_mask 0x20, 2023-02-23, rev 0x00f8, size 97280
+    sig 0x000a0653, pf_mask 0x22, 2023-02-23, rev 0x00f8, size 97280
+    sig 0x000a0655, pf_mask 0x22, 2023-02-23, rev 0x00f8, size 97280
+    sig 0x000a0660, pf_mask 0x80, 2023-02-23, rev 0x00f8, size 97280
+    sig 0x000a0661, pf_mask 0x80, 2023-02-23, rev 0x00f8, size 96256
+    sig 0x000a0671, pf_mask 0x02, 2023-02-26, rev 0x0059, size 104448
+    sig 0x000b0671, pf_mask 0x32, 2023-06-06, rev 0x0119, size 210944
+    sig 0x000b06a2, pf_mask 0xe0, 2023-06-06, rev 0x4119, size 216064
+    sig 0x000b06a3, pf_mask 0xe0, 2023-06-06, rev 0x4119
+    sig 0x000b06e0, pf_mask 0x11, 2023-04-12, rev 0x0011, size 136192
+
+2023-05-12:
+  * New upstream microcode datafile 20230512
+  * New microcodes:
+    sig 0x000906a4, pf_mask 0x40, 2022-10-12, rev 0x0004, size 115712
+    sig 0x000b06e0, pf_mask 0x01, 2022-12-19, rev 0x0010, size 134144
+  * Updated microcodes:
+    sig 0x00050653, pf_mask 0x97, 2022-12-21, rev 0x1000171, size 36864
+    sig 0x00050654, pf_mask 0xb7, 2022-12-21, rev 0x2006f05, size 44032
+    sig 0x00050656, pf_mask 0xbf, 2022-12-21, rev 0x4003501, size 37888
+    sig 0x00050657, pf_mask 0xbf, 2022-12-21, rev 0x5003501, size 37888
+    sig 0x0005065b, pf_mask 0xbf, 2022-12-21, rev 0x7002601, size 29696
+    sig 0x000606a6, pf_mask 0x87, 2022-12-28, rev 0xd000390, size 296960
+    sig 0x000706e5, pf_mask 0x80, 2022-12-25, rev 0x00ba, size 113664
+    sig 0x000806a1, pf_mask 0x10, 2023-01-13, rev 0x0033, size 34816
+    sig 0x000806c1, pf_mask 0x80, 2022-12-28, rev 0x00aa, size 110592
+    sig 0x000806c2, pf_mask 0xc2, 2022-12-28, rev 0x002a, size 97280
+    sig 0x000806d1, pf_mask 0xc2, 2022-12-28, rev 0x0044, size 102400
+    sig 0x000806e9, pf_mask 0xc0, 2022-12-26, rev 0x00f2, size 105472
+    sig 0x000806e9, pf_mask 0x10, 2023-01-02, rev 0x00f2, size 105472
+    sig 0x000806ea, pf_mask 0xc0, 2022-12-26, rev 0x00f2, size 105472
+    sig 0x000806eb, pf_mask 0xd0, 2022-12-26, rev 0x00f2, size 105472
+    sig 0x000806ec, pf_mask 0x94, 2022-12-26, rev 0x00f6, size 105472
+    sig 0x000806f8, pf_mask 0x87, 2023-03-13, rev 0x2b000461, size 564224
+    sig 0x000806f7, pf_mask 0x87, 2023-03-13, rev 0x2b000461
+    sig 0x000806f6, pf_mask 0x87, 2023-03-13, rev 0x2b000461
+    sig 0x000806f5, pf_mask 0x87, 2023-03-13, rev 0x2b000461
+    sig 0x000806f4, pf_mask 0x87, 2023-03-13, rev 0x2b000461
+    sig 0x000806f8, pf_mask 0x10, 2023-02-14, rev 0x2c0001d1, size 595968
+    sig 0x000806f6, pf_mask 0x10, 2023-02-14, rev 0x2c0001d1
+    sig 0x000806f5, pf_mask 0x10, 2023-02-14, rev 0x2c0001d1
+    sig 0x000806f4, pf_mask 0x10, 2023-02-14, rev 0x2c0001d1
+    sig 0x000906a3, pf_mask 0x80, 2023-02-14, rev 0x042a, size 218112
+    sig 0x000906a4, pf_mask 0x80, 2023-02-14, rev 0x042a
+    sig 0x000906e9, pf_mask 0x2a, 2022-12-26, rev 0x00f2, size 108544
+    sig 0x000906ea, pf_mask 0x22, 2023-01-12, rev 0x00f2, size 104448
+    sig 0x000906eb, pf_mask 0x02, 2022-12-26, rev 0x00f2, size 105472
+    sig 0x000906ec, pf_mask 0x22, 2023-01-12, rev 0x00f2, size 104448
+    sig 0x000906ed, pf_mask 0x22, 2023-02-05, rev 0x00f8, size 104448
+    sig 0x000a0652, pf_mask 0x20, 2022-12-27, rev 0x00f6, size 96256
+    sig 0x000a0653, pf_mask 0x22, 2023-01-01, rev 0x00f6, size 97280
+    sig 0x000a0655, pf_mask 0x22, 2022-12-26, rev 0x00f6, size 96256
+    sig 0x000a0660, pf_mask 0x80, 2022-12-26, rev 0x00f6, size 97280
+    sig 0x000a0661, pf_mask 0x80, 2022-12-26, rev 0x00f6, size 96256
+    sig 0x000a0671, pf_mask 0x02, 2022-12-25, rev 0x0058, size 103424
+    sig 0x000b0671, pf_mask 0x32, 2023-02-06, rev 0x0113, size 207872
+    sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112, size 212992
+    sig 0x000b06a3, pf_mask 0xc0, 2023-02-22, rev 0x4112
+
+2023-02-14:
+  * New upstream microcode datafile 20230214
+    * Includes fixes for:
+      - INTEL-SA-00700: CVE-2022-21216
+      - INTEL-SA-00730: CVE-2022-33972
+      - INTEL-SA-00738: CVE-2022-33196
+      - INTEL-SA-00767: CVE-2022-38090
+  * New Microcodes:
+    sig 0x000806f4, pf_mask 0x10, 2022-12-19, rev 0x2c000170
+    sig 0x000806f4, pf_mask 0x87, 2022-12-27, rev 0x2b000181
+    sig 0x000806f5, pf_mask 0x10, 2022-12-19, rev 0x2c000170
+    sig 0x000806f5, pf_mask 0x87, 2022-12-27, rev 0x2b000181
+    sig 0x000806f6, pf_mask 0x10, 2022-12-19, rev 0x2c000170
+    sig 0x000806f6, pf_mask 0x87, 2022-12-27, rev 0x2b000181
+    sig 0x000806f7, pf_mask 0x87, 2022-12-27, rev 0x2b000181
+    sig 0x000806f8, pf_mask 0x10, 2022-12-19, rev 0x2c000170, size 600064
+    sig 0x000806f8, pf_mask 0x87, 2022-12-27, rev 0x2b000181, size 561152
+    sig 0x000b06a2, pf_mask 0xc0, 2022-12-08, rev 0x410e
+    sig 0x000b06a2, pf_mask 0xc0, 2022-12-08, rev 0x410e, size 212992
+    sig 0x000b06a3, pf_mask 0xc0, 2022-12-08, rev 0x410e
+  * Updated Microcodes:
+    sig 0x00050653, pf_mask 0x97, 2022-08-30, rev 0x1000161, size 36864
+    sig 0x00050656, pf_mask 0xbf, 2022-08-26, rev 0x4003303, size 37888
+    sig 0x00050657, pf_mask 0xbf, 2022-08-26, rev 0x5003303, size 37888
+    sig 0x0005065b, pf_mask 0xbf, 2022-08-26, rev 0x7002503, size 29696
+    sig 0x000606a6, pf_mask 0x87, 2022-10-09, rev 0xd000389, size 296960
+    sig 0x000606c1, pf_mask 0x10, 2022-09-23, rev 0x1000211, size 289792
+    sig 0x000706a1, pf_mask 0x01, 2022-09-16, rev 0x003e, size 75776
+    sig 0x000706a8, pf_mask 0x01, 2022-09-20, rev 0x0022, size 76800
+    sig 0x000706e5, pf_mask 0x80, 2022-08-31, rev 0x00b8, size 113664
+    sig 0x000806a1, pf_mask 0x10, 2022-09-07, rev 0x0032, size 34816
+    sig 0x00090672, pf_mask 0x07, 2023-01-04, rev 0x002c, size 219136
+    sig 0x00090675, pf_mask 0x07, 2023-01-04, rev 0x002c
+    sig 0x000906a3, pf_mask 0x80, 2023-01-11, rev 0x0429, size 218112
+    sig 0x000906a4, pf_mask 0x80, 2023-01-11, rev 0x0429
+    sig 0x000906c0, pf_mask 0x01, 2022-09-02, rev 0x24000024, size 20480
+    sig 0x000a0671, pf_mask 0x02, 2022-08-31, rev 0x0057, size 103424
+    sig 0x000b0671, pf_mask 0x32, 2022-12-19, rev 0x0112, size 207872
+    sig 0x000b06f2, pf_mask 0x07, 2023-01-04, rev 0x002c
+    sig 0x000b06f5, pf_mask 0x07, 2023-01-04, rev 0x002c
+
+2022-11-08:
+  * New Microcodes:
+    sig 0x000606c1, pf_mask 0x10, 2022-08-07, rev 0x1000201, size 286720
+    sig 0x000b0671, pf_mask 0x32, 2022-09-07, rev 0x010e, size 204800
+  * Updated Microcodes:
+    sig 0x000706e5, pf_mask 0x80, 2022-08-02, rev 0x00b6, size 113664
+    sig 0x000806c1, pf_mask 0x80, 2022-06-28, rev 0x00a6, size 110592
+    sig 0x000806d1, pf_mask 0xc2, 2022-06-28, rev 0x0042, size 102400
+    sig 0x000806ec, pf_mask 0x94, 2022-07-31, rev 0x00f4, size 105472
+    sig 0x00090661, pf_mask 0x01, 2022-07-15, rev 0x0017, size 20480
+    sig 0x00090672, pf_mask 0x07, 2022-09-19, rev 0x0026, size 218112
+    sig 0x00090675, pf_mask 0x07, 2022-09-19, rev 0x0026
+    sig 0x000b06f2, pf_mask 0x07, 2022-09-19, rev 0x0026
+    sig 0x000b06f5, pf_mask 0x07, 2022-09-19, rev 0x0026
+    sig 0x000906a3, pf_mask 0x80, 2022-09-19, rev 0x0424, size 217088
+    sig 0x000906a4, pf_mask 0x80, 2022-09-19, rev 0x0424
+    sig 0x000906ed, pf_mask 0x22, 2022-07-31, rev 0x00f4, size 104448
+    sig 0x000a0652, pf_mask 0x20, 2022-07-31, rev 0x00f4, size 96256
+    sig 0x000a0653, pf_mask 0x22, 2022-07-31, rev 0x00f4, size 97280
+    sig 0x000a0655, pf_mask 0x22, 2022-07-31, rev 0x00f4, size 96256
+    sig 0x000a0660, pf_mask 0x80, 2022-07-31, rev 0x00f4, size 97280
+    sig 0x000a0661, pf_mask 0x80, 2022-07-31, rev 0x00f4, size 96256
+    sig 0x000a0671, pf_mask 0x02, 2022-08-02, rev 0x0056, size 103424
+
+2022-08-09:
+  * Fixes INTEL-SA-00657, CVE-2022-21233
+    Stale data from APIC leaks SGX memory (AEPIC leak)
+  * Fixes unspecified errata (functional issues) on Xeon Scalable
+  * Updated Microcodes:
+    sig 0x00050653, pf_mask 0x97, 2022-03-14, rev 0x100015e, size 34816
+    sig 0x00050654, pf_mask 0xb7, 2022-03-08, rev 0x2006e05, size 44032
+    sig 0x000606a6, pf_mask 0x87, 2022-04-07, rev 0xd000375, size 293888
+    sig 0x000706a1, pf_mask 0x01, 2022-03-23, rev 0x003c, size 75776
+    sig 0x000706a8, pf_mask 0x01, 2022-03-23, rev 0x0020, size 75776
+    sig 0x000706e5, pf_mask 0x80, 2022-03-17, rev 0x00b2, size 112640
+    sig 0x000806c2, pf_mask 0xc2, 2022-03-19, rev 0x0028, size 97280
+    sig 0x000806d1, pf_mask 0xc2, 2022-03-28, rev 0x0040, size 102400
+    sig 0x00090672, pf_mask 0x03, 2022-06-07, rev 0x0022, size 216064
+    sig 0x00090675, pf_mask 0x03, 2022-06-07, rev 0x0022, size 216064
+    sig 0x000906a3, pf_mask 0x80, 2022-06-15, rev 0x0421, size 216064
+    sig 0x000906a4, pf_mask 0x80, 2022-06-15, rev 0x0421, size 216064
+    sig 0x000a0671, pf_mask 0x02, 2022-03-17, rev 0x0054, size 103424
+    sig 0x000b06f2, pf_mask 0x03, 2022-06-07, rev 0x0022, size 216064
+    sig 0x000b06f5, pf_mask 0x03, 2022-06-07, rev 0x0022, size 216064
+
+2022-05-10:
+  * Fixes INTEL-SA-000617, CVE-2022-21151:
+    Processor optimization removal or modification of security-critical
+    code may allow an authenticated user to potentially enable information
+    disclosure via local access
+  * Mitigates INTEL-SA-00615: CVE-2022-21166 (DRPW), CVE-2022-21123 (SRBDS
+    update), CVE-2022-21125 (SBDS), CVE-2022-21127 (SBDR): disclosure of
+    stale data in shared buffers (special registers, MMIO, uarch) via
+    local access
+  * Fixes several errata (functional issues) on Xeon Scalable, Atom C3000,
+    Atom E3900
+  * New Microcodes:
+    sig 0x00090672, pf_mask 0x03, 2022-03-03, rev 0x001f, size 212992
+    sig 0x00090675, pf_mask 0x03, 2022-03-03, rev 0x001f, size 212992
+    sig 0x000906a3, pf_mask 0x80, 2022-03-24, rev 0x041c, size 212992
+    sig 0x000906a4, pf_mask 0x80, 2022-03-24, rev 0x041c, size 212992
+    sig 0x000b06f2, pf_mask 0x03, 2022-03-03, rev 0x001f, size 212992
+    sig 0x000b06f5, pf_mask 0x03, 2022-03-03, rev 0x001f, size 212992
+
+  * Updated Microcodes:
+    sig 0x00030679, pf_mask 0x0f, 2019-07-10, rev 0x090d, size 52224
+    sig 0x000406e3, pf_mask 0xc0, 2021-11-12, rev 0x00f0, size 106496
+    sig 0x00050653, pf_mask 0x97, 2021-11-13, rev 0x100015d, size 34816
+    sig 0x00050654, pf_mask 0xb7, 2021-11-13, rev 0x2006d05, size 43008
+    sig 0x00050656, pf_mask 0xbf, 2021-12-10, rev 0x4003302, size 37888
+    sig 0x00050657, pf_mask 0xbf, 2021-12-10, rev 0x5003302, size 37888
+    sig 0x0005065b, pf_mask 0xbf, 2021-11-19, rev 0x7002501, size 29696
+    sig 0x000506c9, pf_mask 0x03, 2021-11-16, rev 0x0048, size 17408
+    sig 0x000506e3, pf_mask 0x36, 2021-11-12, rev 0x00f0, size 109568
+    sig 0x000506f1, pf_mask 0x01, 2021-12-02, rev 0x0038, size 11264
+    sig 0x000606a6, pf_mask 0x87, 2022-03-30, rev 0xd000363, size 294912
+    sig 0x000706a1, pf_mask 0x01, 2021-11-22, rev 0x003a, size 75776
+    sig 0x000706a8, pf_mask 0x01, 2021-11-22, rev 0x001e, size 75776
+    sig 0x000706e5, pf_mask 0x80, 2022-03-09, rev 0x00b0, size 112640
+    sig 0x000806a1, pf_mask 0x10, 2022-03-26, rev 0x0031, size 34816
+    sig 0x000806c1, pf_mask 0x80, 2022-02-01, rev 0x00a4, size 109568
+    sig 0x000806c2, pf_mask 0xc2, 2021-12-07, rev 0x0026, size 97280
+    sig 0x000806d1, pf_mask 0xc2, 2021-12-07, rev 0x003e, size 102400
+    sig 0x000806e9, pf_mask 0x10, 2021-11-12, rev 0x00f0, size 105472
+    sig 0x000806e9, pf_mask 0xc0, 2021-11-12, rev 0x00f0, size 105472
+    sig 0x000806ea, pf_mask 0xc0, 2021-11-12, rev 0x00f0, size 105472
+    sig 0x000806eb, pf_mask 0xd0, 2021-11-15, rev 0x00f0, size 105472
+    sig 0x000806ec, pf_mask 0x94, 2021-11-17, rev 0x00f0, size 105472
+    sig 0x00090661, pf_mask 0x01, 2022-02-03, rev 0x0016, size 20480
+    sig 0x000906c0, pf_mask 0x01, 2022-02-19, rev 0x24000023, size 20480
+    sig 0x000906e9, pf_mask 0x2a, 2021-11-12, rev 0x00f0, size 108544
+    sig 0x000906ea, pf_mask 0x22, 2021-11-15, rev 0x00f0, size 104448
+    sig 0x000906eb, pf_mask 0x02, 2021-11-12, rev 0x00f0, size 105472
+    sig 0x000906ec, pf_mask 0x22, 2021-11-15, rev 0x00f0, size 104448
+    sig 0x000906ed, pf_mask 0x22, 2021-11-16, rev 0x00f0, size 104448
+    sig 0x000a0652, pf_mask 0x20, 2021-11-16, rev 0x00f0, size 96256
+    sig 0x000a0653, pf_mask 0x22, 2021-11-15, rev 0x00f0, size 97280
+    sig 0x000a0655, pf_mask 0x22, 2021-11-16, rev 0x00f0, size 96256
+    sig 0x000a0660, pf_mask 0x80, 2021-11-15, rev 0x00f0, size 96256
+    sig 0x000a0661, pf_mask 0x80, 2021-11-16, rev 0x00f0, size 96256
+    sig 0x000a0671, pf_mask 0x02, 2022-03-09, rev 0x0053, size 103424
+
+2022-04-19:
+  * Fixes errata APLI-11 in Atom E3900 series processors
+  * Updated Microcodes:
+    sig 0x000506ca, pf_mask 0x03, 2021-11-16, rev 0x0028, size 16384
+
+2022-02-07:
+  * Relevant information:
+    https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html
+  * Mitigates (*only* when loaded from firmware through the FIT)
+    CVE-2021-0146, INTEL-SA-00528: VT-d privilege escalation through
+    debug port, on Pentium, Celeron and Atom processors with signatures
+    0x506c9, 0x506ca, 0x506f1, 0x706a1, 0x706a8
+    https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/57#issuecomment-1036363145
+  * Mitigates CVE-2021-0127, INTEL-SA-00532: an unexpected code breakpoint
+    may cause a system hang, on many processors.
+  * Mitigates CVE-2021-0145, INTEL-SA-00561: information disclosure due
+    to improper sanitization of shared resources (fast-store forward
+    predictor), on many processors.
+  * Mitigates CVE-2021-33120, INTEL-SA-00589: out-of-bounds read on some
+    Atom Processors may allow information disclosure or denial of service
+    via network access.
+  * Fixes critical errata (functional issues) on many processors
+  * Adds a MSR switch to enable RAPL filtering (default off, once enabled
+    it can only be disabled by poweroff or reboot).  Useful to protect
+    SGX and other threads from side-channel info leak.  Improves the
+    mitigation for CVE-2020-8694, CVE-2020-8695, INTEL-SA-00389 on many
+    processors.
+  * Disables TSX in more processor models.
+  * Fixes issue with WBINDV on multi-socket (server) systems which could
+    cause resets and unpredictable system behavior
+  * Adds a MSR switch to 10th and 11th-gen (Ice Lake, Tiger Lake, Rocket
+    Lake) processors, to control a fix for (hopefully rare) unpredictable
+    processor behavior when HyperThreading is enabled.  This MSR switch
+    is enabled by default on *server* processors.  On other processors,
+    it needs to be explicitly enabled by an updated UEFI/BIOS (with added
+    configuration logic).  An updated operating system kernel might also
+    be able to enable it.  When enabled, this fix can impact performance.
+  * Updated Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2021-08-11, rev 0x0049, size 38912
+    sig 0x000306f4, pf_mask 0x80, 2021-05-24, rev 0x001a, size 23552
+    sig 0x000406e3, pf_mask 0xc0, 2021-04-28, rev 0x00ec, size 105472
+    sig 0x00050653, pf_mask 0x97, 2021-05-26, rev 0x100015c, size 34816
+    sig 0x00050654, pf_mask 0xb7, 2021-06-16, rev 0x2006c0a, size 43008
+    sig 0x00050656, pf_mask 0xbf, 2021-08-13, rev 0x400320a, size 35840
+    sig 0x00050657, pf_mask 0xbf, 2021-08-13, rev 0x500320a, size 36864
+    sig 0x0005065b, pf_mask 0xbf, 2021-06-04, rev 0x7002402, size 28672
+    sig 0x00050663, pf_mask 0x10, 2021-06-12, rev 0x700001c, size 28672
+    sig 0x00050664, pf_mask 0x10, 2021-06-12, rev 0xf00001a, size 27648
+    sig 0x00050665, pf_mask 0x10, 2021-09-18, rev 0xe000014, size 23552
+    sig 0x000506c9, pf_mask 0x03, 2021-05-10, rev 0x0046, size 17408
+    sig 0x000506ca, pf_mask 0x03, 2021-05-10, rev 0x0024, size 16384
+    sig 0x000506e3, pf_mask 0x36, 2021-04-29, rev 0x00ec, size 108544
+    sig 0x000506f1, pf_mask 0x01, 2021-05-10, rev 0x0036, size 11264
+    sig 0x000606a6, pf_mask 0x87, 2021-12-03, rev 0xd000331, size 291840
+    sig 0x000706a1, pf_mask 0x01, 2021-05-10, rev 0x0038, size 74752
+    sig 0x000706a8, pf_mask 0x01, 2021-05-10, rev 0x001c, size 75776
+    sig 0x000706e5, pf_mask 0x80, 2021-05-26, rev 0x00a8, size 110592
+    sig 0x000806a1, pf_mask 0x10, 2021-09-02, rev 0x002d, size 34816
+    sig 0x000806c1, pf_mask 0x80, 2021-08-06, rev 0x009a, size 109568
+    sig 0x000806c2, pf_mask 0xc2, 2021-07-16, rev 0x0022, size 96256
+    sig 0x000806d1, pf_mask 0xc2, 2021-07-16, rev 0x003c, size 101376
+    sig 0x000806e9, pf_mask 0x10, 2021-04-28, rev 0x00ec, size 104448
+    sig 0x000806e9, pf_mask 0xc0, 2021-04-28, rev 0x00ec, size 104448
+    sig 0x000806ea, pf_mask 0xc0, 2021-04-28, rev 0x00ec, size 103424
+    sig 0x000806eb, pf_mask 0xd0, 2021-04-28, rev 0x00ec, size 104448
+    sig 0x000806ec, pf_mask 0x94, 2021-04-28, rev 0x00ec, size 104448
+    sig 0x00090661, pf_mask 0x01, 2021-09-21, rev 0x0015, size 20480
+    sig 0x000906c0, pf_mask 0x01, 2021-08-09, rev 0x2400001f, size 20480
+    sig 0x000906e9, pf_mask 0x2a, 2021-04-29, rev 0x00ec, size 106496
+    sig 0x000906ea, pf_mask 0x22, 2021-04-28, rev 0x00ec, size 102400
+    sig 0x000906eb, pf_mask 0x02, 2021-04-28, rev 0x00ec, size 104448
+    sig 0x000906ec, pf_mask 0x22, 2021-04-28, rev 0x00ec, size 103424
+    sig 0x000906ed, pf_mask 0x22, 2021-04-28, rev 0x00ec, size 103424
+    sig 0x000a0652, pf_mask 0x20, 2021-04-28, rev 0x00ec, size 93184
+    sig 0x000a0653, pf_mask 0x22, 2021-04-28, rev 0x00ec, size 94208
+    sig 0x000a0655, pf_mask 0x22, 2021-04-28, rev 0x00ee, size 94208
+    sig 0x000a0660, pf_mask 0x80, 2021-04-28, rev 0x00ea, size 94208
+    sig 0x000a0661, pf_mask 0x80, 2021-04-29, rev 0x00ec, size 93184
+    sig 0x000a0671, pf_mask 0x02, 2021-08-29, rev 0x0050, size 102400
+  * Removed Microcodes:
+    sig 0x00080664, pf_mask 0x01, 2021-02-17, rev 0xb00000f, size 130048
+    sig 0x00080665, pf_mask 0x01, 2021-02-17, rev 0xb00000f, size 130048
+
+2021-06-08:
+  * Implements mitigations for CVE-2020-24511 CVE-2020-24512
+    (INTEL-SA-00464), information leakage through shared resources,
+    and timing discrepancy sidechannels
+  * Implements mitigations for CVE-2020-24513 (INTEL-SA-00465),
+    Domain-bypass transient execution vulnerability in some Intel Atom
+    Processors, affects Intel SGX.
+  * Implements mitigations for CVE-2020-24489 (INTEL-SA-00442), Intel
+    VT-d privilege escalation
+  * Fixes critical errata on several processors
+  * Disables TSX on several processors
+  * New Microcodes:
+    sig 0x00050655, pf_mask 0xb7, 2018-11-16, rev 0x3000010, size 47104
+    sig 0x000606a5, pf_mask 0x87, 2021-03-08, rev 0xc0002f0, size 283648
+    sig 0x000606a6, pf_mask 0x87, 2021-04-25, rev 0xd0002a0, size 283648
+    sig 0x00080664, pf_mask 0x01, 2021-02-17, rev 0xb00000f, size 130048
+    sig 0x00080665, pf_mask 0x01, 2021-02-17, rev 0xb00000f, size 130048
+    sig 0x000806c1, pf_mask 0x80, 2021-03-31, rev 0x0088, size 109568
+    sig 0x000806c2, pf_mask 0xc2, 2021-04-07, rev 0x0016, size 94208
+    sig 0x000806d1, pf_mask 0xc2, 2021-04-23, rev 0x002c, size 99328
+    sig 0x00090661, pf_mask 0x01, 2021-02-04, rev 0x0011, size 19456
+    sig 0x000906c0, pf_mask 0x01, 2021-03-23, rev 0x001d, size 19456
+    sig 0x000a0671, pf_mask 0x02, 2021-04-11, rev 0x0040, size 100352
+  * Updated Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2021-01-27, rev 0x0046, size 34816
+    sig 0x000306f4, pf_mask 0x80, 2021-02-05, rev 0x0019, size 19456
+    sig 0x000406e3, pf_mask 0xc0, 2021-01-25, rev 0x00ea, size 105472
+    sig 0x000406f1, pf_mask 0xef, 2021-02-06, rev 0xb00003e, size 31744
+    sig 0x00050653, pf_mask 0x97, 2021-03-08, rev 0x100015b, size 34816
+    sig 0x00050654, pf_mask 0xb7, 2021-03-08, rev 0x2006b06, size 36864
+    sig 0x00050656, pf_mask 0xbf, 2021-03-08, rev 0x4003102, size 30720
+    sig 0x00050657, pf_mask 0xbf, 2021-03-08, rev 0x5003102, size 30720
+    sig 0x0005065b, pf_mask 0xbf, 2021-04-23, rev 0x7002302, size 27648
+    sig 0x00050663, pf_mask 0x10, 2021-02-04, rev 0x700001b, size 24576
+    sig 0x00050664, pf_mask 0x10, 2021-02-04, rev 0xf000019, size 24576
+    sig 0x00050665, pf_mask 0x10, 2021-02-04, rev 0xe000012, size 19456
+    sig 0x000506c9, pf_mask 0x03, 2020-10-23, rev 0x0044, size 17408
+    sig 0x000506ca, pf_mask 0x03, 2020-10-23, rev 0x0020, size 15360
+    sig 0x000506e3, pf_mask 0x36, 2021-01-25, rev 0x00ea, size 105472
+    sig 0x000506f1, pf_mask 0x01, 2020-10-23, rev 0x0034, size 11264
+    sig 0x000706a1, pf_mask 0x01, 2020-10-23, rev 0x0036, size 74752
+    sig 0x000706a8, pf_mask 0x01, 2020-10-23, rev 0x001a, size 75776
+    sig 0x000706e5, pf_mask 0x80, 2020-11-01, rev 0x00a6, size 110592
+    sig 0x000806a1, pf_mask 0x10, 2020-11-06, rev 0x002a, size 32768
+    sig 0x000806e9, pf_mask 0x10, 2021-01-05, rev 0x00ea, size 104448
+    sig 0x000806e9, pf_mask 0xc0, 2021-01-05, rev 0x00ea, size 104448
+    sig 0x000806ea, pf_mask 0xc0, 2021-01-06, rev 0x00ea, size 103424
+    sig 0x000806eb, pf_mask 0xd0, 2021-01-05, rev 0x00ea, size 104448
+    sig 0x000806ec, pf_mask 0x94, 2021-01-05, rev 0x00ea, size 104448
+    sig 0x000906e9, pf_mask 0x2a, 2021-01-05, rev 0x00ea, size 104448
+    sig 0x000906ea, pf_mask 0x22, 2021-01-05, rev 0x00ea, size 102400
+    sig 0x000906eb, pf_mask 0x02, 2021-01-05, rev 0x00ea, size 104448
+    sig 0x000906ec, pf_mask 0x22, 2021-01-05, rev 0x00ea, size 103424
+    sig 0x000906ed, pf_mask 0x22, 2021-01-05, rev 0x00ea, size 103424
+    sig 0x000a0652, pf_mask 0x20, 2021-02-07, rev 0x00ea, size 93184
+    sig 0x000a0653, pf_mask 0x22, 2021-03-08, rev 0x00ea, size 94208
+    sig 0x000a0655, pf_mask 0x22, 2021-03-08, rev 0x00ec, size 94208
+    sig 0x000a0660, pf_mask 0x80, 2020-12-08, rev 0x00e8, size 94208
+    sig 0x000a0661, pf_mask 0x80, 2021-02-07, rev 0x00ea, size 93184
+
+2021-02-16:
+  * Mitigates an issue on Skylake Server (H0/M0/U0), Xeon-D 21xx,
+    and Cascade Lake Server (B0/B1) when using an active JTAG
+    agent like In Target Probe (ITP), Direct Connect Interface
+    (DCI) or a Baseboard Management Controller (BMC) to take the
+    CPU JTAG/TAP out of reset and then returning it to reset.
+  * This issue is related to the INTEL-SA-00381 mitigation.
+  * Updated Microcodes:
+    sig 0x00050654, pf_mask 0xb7, 2020-12-31, rev 0x2006a0a, size 36864
+    sig 0x00050656, pf_mask 0xbf, 2020-12-31, rev 0x4003006, size 53248
+    sig 0x00050657, pf_mask 0xbf, 2020-12-31, rev 0x5003006, size 53248
+
+2020-11-18:
+  * Removes a faulty microcode update from release 2020-11-10
+    which results on boot failures with a MCE (firmware error)
+    on Tiger Lake processors
+  * Removed Microcodes:
+    sig 0x000806c1, pf_mask 0x80, 2020-10-02, rev 0x0068, size 107520
+
+2020-11-12:
+  * Add a missing microcode update from release 2020-11-10
+    for the Pentium Silver N/J5xxx, Celeron N/J4xxx
+  * Implements mitigation for CVE-2020-8696 and CVE-2020-8698,
+    aka INTEL-SA-00381: AVX register information leakage;
+    Fast-Forward store predictor information leakage
+  * Implements mitigation for CVE-2020-8695, Intel SGX information
+    disclosure via RAPL, aka INTEL-SA-00389
+  * Updated Microcodes:
+    sig 0x000706a1, pf_mask 0x01, 2020-06-09, rev 0x0034, size 74752
+
+2020-11-10:
+  * Implements mitigation for CVE-2020-8696 and CVE-2020-8698,
+    aka INTEL-SA-00381: AVX register information leakage;
+    Fast-Forward store predictor information leakage
+  * Implements mitigation for CVE-2020-8695, Intel SGX information
+    disclosure via RAPL, aka INTEL-SA-00389
+  * Fixes critical errata on several processor models
+  * Supposed to fix some boot regressions, allowing us to try to
+    reintroduce SRBDS mitigations for:
+    Skylake-U/Y, Skylake Xeon E3 (CVE-2020-0543, INTEL-SA-00320).
+  * New Microcodes:
+    sig 0x0005065b, pf_mask 0xbf, 2020-08-20, rev 0x700001e, size 27648
+    sig 0x000806a1, pf_mask 0x10, 2020-06-26, rev 0x0028, size 32768
+    sig 0x000806c1, pf_mask 0x80, 2020-10-02, rev 0x0068, size 107520
+    sig 0x000a0652, pf_mask 0x20, 2020-07-08, rev 0x00e0, size 93184
+    sig 0x000a0653, pf_mask 0x22, 2020-07-08, rev 0x00e0, size 94208
+    sig 0x000a0655, pf_mask 0x22, 2020-07-08, rev 0x00e0, size 93184
+    sig 0x000a0661, pf_mask 0x80, 2020-07-02, rev 0x00e0, size 93184
+  * Updated Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2020-05-27, rev 0x0044, size 34816
+    sig 0x000406e3, pf_mask 0xc0, 2020-07-14, rev 0x00e2, size 105472
+    sig 0x00050653, pf_mask 0x97, 2020-06-18, rev 0x1000159, size 33792
+    sig 0x00050654, pf_mask 0xb7, 2020-06-16, rev 0x2006a08, size 35840
+    sig 0x00050656, pf_mask 0xbf, 2020-06-18, rev 0x4003003, size 52224
+    sig 0x00050657, pf_mask 0xbf, 2020-06-18, rev 0x5003003, size 52224
+    sig 0x000506c9, pf_mask 0x03, 2020-02-27, rev 0x0040, size 17408
+    sig 0x000506ca, pf_mask 0x03, 2020-02-27, rev 0x001e, size 15360
+    sig 0x000506e3, pf_mask 0x36, 2020-07-14, rev 0x00e2, size 105472
+    sig 0x000706a8, pf_mask 0x01, 2020-06-09, rev 0x0018, size 75776
+    sig 0x000706e5, pf_mask 0x80, 2020-07-30, rev 0x00a0, size 109568
+    sig 0x000806e9, pf_mask 0x10, 2020-05-27, rev 0x00de, size 104448
+    sig 0x000806e9, pf_mask 0xc0, 2020-05-27, rev 0x00de, size 104448
+    sig 0x000806ea, pf_mask 0xc0, 2020-06-17, rev 0x00e0, size 104448
+    sig 0x000806eb, pf_mask 0xd0, 2020-06-03, rev 0x00de, size 104448
+    sig 0x000806ec, pf_mask 0x94, 2020-05-18, rev 0x00de, size 104448
+    sig 0x000906e9, pf_mask 0x2a, 2020-05-26, rev 0x00de, size 104448
+    sig 0x000906ea, pf_mask 0x22, 2020-05-25, rev 0x00de, size 103424
+    sig 0x000906eb, pf_mask 0x02, 2020-05-25, rev 0x00de, size 104448
+    sig 0x000906ec, pf_mask 0x22, 2020-06-03, rev 0x00de, size 103424
+    sig 0x000906ed, pf_mask 0x22, 2020-05-24, rev 0x00de, size 103424
+    sig 0x000a0660, pf_mask 0x80, 2020-07-08, rev 0x00e0, size 94208
+
+2020-06-16:
+  * Downgraded microcodes (to a previously shipped revision):
+    sig 0x000406e3, pf_mask 0xc0, 2019-10-03, rev 0x00d6, size 101376
+    sig 0x000506e3, pf_mask 0x36, 2019-10-03, rev 0x00d6, size 101376
+  * Works around hangs on boot on Skylake-U/Y and Skylake Xeon E3,
+    https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/31
+  * This update *removes* the SRBDS mitigations from the above processors
+
+2020-06-09:
+  * Implements mitigation for CVE-2020-0543 Special Register Buffer Data
+    Sampling (SRBDS), aka INTEL-SA-00320
+  * Known to fix the regression introduced in release 2019-11-12 (sig
+    0x50564, rev. 0x2000065), which would cause several systems with
+    Skylake Xeon, Skylake HEDT processors to hang on warm reboots
+  * Updated Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2019-11-12, rev 0x0028, size 23552
+    sig 0x000306d4, pf_mask 0xc0, 2019-11-12, rev 0x002f, size 19456
+    sig 0x00040651, pf_mask 0x72, 2019-11-12, rev 0x0026, size 22528
+    sig 0x00040661, pf_mask 0x32, 2019-11-12, rev 0x001c, size 25600
+    sig 0x00040671, pf_mask 0x22, 2019-11-12, rev 0x0022, size 14336
+    sig 0x00050653, pf_mask 0x97, 2020-04-24, rev 0x1000157, size 32768
+    sig 0x00050654, pf_mask 0xb7, 2020-04-24, rev 0x2006906, size 34816
+    sig 0x00050656, pf_mask 0xbf, 2020-04-23, rev 0x4002f01, size 52224
+    sig 0x00050657, pf_mask 0xbf, 2020-04-23, rev 0x5002f01, size 52224
+    sig 0x000506e3, pf_mask 0x36, 2020-04-27, rev 0x00dc, size 104448
+    sig 0x000806e9, pf_mask 0x10, 2020-04-27, rev 0x00d6, size 103424
+    sig 0x000806e9, pf_mask 0xc0, 2020-04-27, rev 0x00d6, size 103424
+    sig 0x000806ea, pf_mask 0xc0, 2020-04-27, rev 0x00d6, size 103424
+    sig 0x000806eb, pf_mask 0xd0, 2020-04-27, rev 0x00d6, size 103424
+    sig 0x000806ec, pf_mask 0x94, 2020-04-23, rev 0x00d6, size 103424
+    sig 0x000906e9, pf_mask 0x2a, 2020-04-23, rev 0x00d6, size 103424
+    sig 0x000906ea, pf_mask 0x22, 2020-04-27, rev 0x00d6, size 102400
+    sig 0x000906eb, pf_mask 0x02, 2020-04-23, rev 0x00d6, size 103424
+    sig 0x000906ec, pf_mask 0x22, 2020-04-27, rev 0x00d6, size 102400
+    sig 0x000906ed, pf_mask 0x22, 2020-04-23, rev 0x00d6, size 103424
+  * Updated Microcodes (later reported to cause regressions):
+    sig 0x000406e3, pf_mask 0xc0, 2020-04-27, rev 0x00dc, size 104448
+
+2020-05-20:
+  * Updated Microcodes:
+    sig 0x000206d6, pf_mask 0x6d, 2020-03-04, rev 0x0621, size 18432
+    sig 0x000206d7, pf_mask 0x6d, 2020-03-24, rev 0x071a, size 19456
+
+2020-05-08:
+  * Updated Microcodes:
+    sig 0x000706e5, pf_mask 0x80, 2020-03-12, rev 0x0078, size 107520
+
+2019-11-15:
+  * Updated Microcodes:
+    sig 0x000406e3, pf_mask 0xc0, 2019-10-03, rev 0x00d6, size 101376
+    sig 0x000506e3, pf_mask 0x36, 2019-10-03, rev 0x00d6, size 101376
+    sig 0x000806e9, pf_mask 0x10, 2019-10-15, rev 0x00ca, size 100352
+    sig 0x000806e9, pf_mask 0xc0, 2019-09-26, rev 0x00ca, size 100352
+    sig 0x000806ea, pf_mask 0xc0, 2019-10-03, rev 0x00ca, size 100352
+    sig 0x000806eb, pf_mask 0xd0, 2019-10-03, rev 0x00ca, size 100352
+    sig 0x000806ec, pf_mask 0x94, 2019-10-03, rev 0x00ca, size 100352
+    sig 0x000906e9, pf_mask 0x2a, 2019-10-03, rev 0x00ca, size 100352
+    sig 0x000906ea, pf_mask 0x22, 2019-10-03, rev 0x00ca, size 99328
+    sig 0x000906eb, pf_mask 0x02, 2019-10-03, rev 0x00ca, size 100352
+    sig 0x000906ec, pf_mask 0x22, 2019-10-03, rev 0x00ca, size 99328
+    sig 0x000906ed, pf_mask 0x22, 2019-10-03, rev 0x00ca, size 100352
+    sig 0x000a0660, pf_mask 0x80, 2019-10-03, rev 0x00ca, size 91136
+
+2019-11-13:
+  * This release adds a microcode update that was missing from
+    the 2019-11-12 release
+  * Updated Microcodes (previously removed):
+    sig 0x000906ec, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+
+2019-11-12:
+  * Implements MDS mitigation (TSX TAA), INTEL-SA-00270, CVE-2019-11135
+  * Implements TA Indirect Sharing mitigation, and improves the
+    MDS mitigation (VERW)
+  * Fixes FIVR (Xeon Voltage Modulation) vulnerability, INTEL-SA-00271,
+    CVE-2019-11139
+  * Fixes SGX vulnerabilities and errata (including CVE-2019-0117)
+  * Fixes Jcc conditional jump macro-fusion erratum (Skylake+, except Ice Lake)
+  * Fixes AVX SHUF* instruction implementation flaw erratum
+  * Removed Microcodes:
+    sig 0x000906ec, pf_mask 0x22, 2019-02-14, rev 0x00ae, size 98304
+  * New Microcodes:
+    sig 0x000406d8, pf_mask 0x01, 2019-09-16, rev 0x012d, size 84992
+    sig 0x00050656, pf_mask 0xbf, 2019-09-05, rev 0x400002c, size 51200
+    sig 0x00060663, pf_mask 0x80, 2018-04-17, rev 0x002a, size 87040
+    sig 0x000706a8, pf_mask 0x01, 2019-08-29, rev 0x0016, size 74752
+    sig 0x000706e5, pf_mask 0x80, 2019-09-05, rev 0x0046, size 102400
+    sig 0x000a0660, pf_mask 0x80, 2019-08-27, rev 0x00c6, size 91136
+  * Updated Microcodes:
+    sig 0x000406e3, pf_mask 0xc0, 2019-08-14, rev 0x00d4, size 101376
+    sig 0x00050657, pf_mask 0xbf, 2019-09-05, rev 0x500002c, size 51200
+    sig 0x000506e3, pf_mask 0x36, 2019-08-14, rev 0x00d4, size 101376
+    sig 0x000706a1, pf_mask 0x01, 2019-08-28, rev 0x0032, size 73728
+    sig 0x000806e9, pf_mask 0x10, 2019-08-14, rev 0x00c6, size 99328
+    sig 0x000806e9, pf_mask 0xc0, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000806ea, pf_mask 0xc0, 2019-08-14, rev 0x00c6, size 99328
+    sig 0x000806eb, pf_mask 0xd0, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000806ec, pf_mask 0x94, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000906e9, pf_mask 0x2a, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000906ea, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+    sig 0x000906eb, pf_mask 0x02, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000906ed, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+  * Updated Microcodes (previously removed):
+    sig 0x00050653, pf_mask 0x97, 2019-09-09, rev 0x1000151, size 32768
+  * Updated microcodes (later reported to cause regressions):
+    sig 0x00050654, pf_mask 0xb7, 2019-09-05, rev 0x2000065, size 34816
+
+2019-09-18:
+  * Updated Microcodes:
+    sig 0x000306d4, pf_mask 0xc0, 2019-06-13, rev 0x002e, size 19456
+    sig 0x000306f4, pf_mask 0x80, 2019-06-17, rev 0x0016, size 18432
+    sig 0x00040671, pf_mask 0x22, 2019-06-13, rev 0x0021, size 14336
+    sig 0x000406f1, pf_mask 0xef, 2019-06-18, rev 0xb000038, size 30720
+    sig 0x00050654, pf_mask 0xb7, 2019-07-31, rev 0x2000064, size 33792
+    sig 0x00050657, pf_mask 0xbf, 2019-08-12, rev 0x500002b, size 51200
+    sig 0x00050662, pf_mask 0x10, 2019-06-17, rev 0x001c, size 32768
+    sig 0x00050663, pf_mask 0x10, 2019-06-17, rev 0x7000019, size 24576
+    sig 0x00050664, pf_mask 0x10, 2019-06-17, rev 0xf000017, size 24576
+    sig 0x00050665, pf_mask 0x10, 2019-06-17, rev 0xe00000f, size 19456
+
+2019-06-18:
+  * Implements MDS mitigation (RIDL, Fallout, Zombieload), INTEL-SA-00223
+    CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091
+  * Updated Microcodes:
+    sig 0x000206d6, pf_mask 0x6d, 2019-05-21, rev 0x061f, size 18432
+    sig 0x000206d7, pf_mask 0x6d, 2019-05-21, rev 0x0718, size 19456
+
+2019-05-14:
+  * Implements MDS mitigation (RIDL, Fallout, Zombieload), INTEL-SA-00223
+    CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091
+  * New Microcodes:
+    sig 0x00030678, pf_mask 0x02, 2019-04-22, rev 0x0838, size 52224
+    sig 0x00030678, pf_mask 0x0c, 2019-04-22, rev 0x0838, size 52224
+    sig 0x00030679, pf_mask 0x0f, 2019-04-23, rev 0x090c, size 52224
+    sig 0x000406c3, pf_mask 0x01, 2019-04-23, rev 0x0368, size 69632
+    sig 0x000406c4, pf_mask 0x01, 2019-04-23, rev 0x0411, size 68608
+    sig 0x00050657, pf_mask 0xbf, 2019-02-27, rev 0x5000021, size 47104
+  * Updated Microcodes:
+    sig 0x000206a7, pf_mask 0x12, 2019-02-17, rev 0x002f, size 12288
+    sig 0x000306a9, pf_mask 0x12, 2019-02-13, rev 0x0021, size 14336
+    sig 0x000306c3, pf_mask 0x32, 2019-02-26, rev 0x0027, size 23552
+    sig 0x000306d4, pf_mask 0xc0, 2019-03-07, rev 0x002d, size 19456
+    sig 0x000306e4, pf_mask 0xed, 2019-03-14, rev 0x042e, size 16384
+    sig 0x000306e7, pf_mask 0xed, 2019-03-14, rev 0x0715, size 17408
+    sig 0x000306f2, pf_mask 0x6f, 2019-03-01, rev 0x0043, size 34816
+    sig 0x000306f4, pf_mask 0x80, 2019-03-01, rev 0x0014, size 18432
+    sig 0x00040651, pf_mask 0x72, 2019-02-26, rev 0x0025, size 21504
+    sig 0x00040661, pf_mask 0x32, 2019-02-26, rev 0x001b, size 25600
+    sig 0x00040671, pf_mask 0x22, 2019-03-07, rev 0x0020, size 14336
+    sig 0x000406e3, pf_mask 0xc0, 2019-04-01, rev 0x00cc, size 100352
+    sig 0x000406f1, pf_mask 0xef, 2019-03-02, rev 0xb000036, size 30720
+    sig 0x00050654, pf_mask 0xb7, 2019-04-02, rev 0x200005e, size 32768
+    sig 0x00050662, pf_mask 0x10, 2019-03-23, rev 0x001a, size 32768
+    sig 0x00050663, pf_mask 0x10, 2019-03-23, rev 0x7000017, size 24576
+    sig 0x00050664, pf_mask 0x10, 2019-03-23, rev 0xf000015, size 23552
+    sig 0x00050665, pf_mask 0x10, 2019-03-23, rev 0xe00000d, size 19456
+    sig 0x000506c9, pf_mask 0x03, 2019-01-15, rev 0x0038, size 17408
+    sig 0x000506ca, pf_mask 0x03, 2019-03-01, rev 0x0016, size 15360
+    sig 0x000506e3, pf_mask 0x36, 2019-04-01, rev 0x00cc, size 100352
+    sig 0x000506f1, pf_mask 0x01, 2019-03-21, rev 0x002e, size 11264
+    sig 0x000706a1, pf_mask 0x01, 2019-01-02, rev 0x002e, size 73728
+    sig 0x000806e9, pf_mask 0x10, 2019-04-01, rev 0x00b4, size 98304
+    sig 0x000806e9, pf_mask 0xc0, 2019-04-01, rev 0x00b4, size 99328
+    sig 0x000806ea, pf_mask 0xc0, 2019-04-01, rev 0x00b4, size 99328
+    sig 0x000806eb, pf_mask 0xd0, 2019-03-30, rev 0x00b8, size 98304
+    sig 0x000806ec, pf_mask 0x94, 2019-03-30, rev 0x00b8, size 97280
+    sig 0x000906e9, pf_mask 0x2a, 2019-04-01, rev 0x00b4, size 99328
+    sig 0x000906ea, pf_mask 0x22, 2019-04-01, rev 0x00b4, size 98304
+    sig 0x000906eb, pf_mask 0x02, 2019-04-01, rev 0x00b4, size 99328
+    sig 0x000906ec, pf_mask 0x22, 2019-02-14, rev 0x00ae, size 98304
+    sig 0x000906ed, pf_mask 0x22, 2019-03-17, rev 0x00b8, size 97280
+
+2019-03-12:
+  * Removed Microcodes:
+    sig 0x00050653, pf_mask 0x97, 2018-01-29, rev 0x1000140, size 30720
+  * New Microcodes:
+    sig 0x000806e9, pf_mask 0x10, 2018-10-18, rev 0x009e, size 98304
+    sig 0x000806eb, pf_mask 0xd0, 2018-10-25, rev 0x00a4, size 99328
+    sig 0x000806ec, pf_mask 0x94, 2019-02-12, rev 0x00b2, size 98304
+    sig 0x000906ec, pf_mask 0x22, 2018-09-29, rev 0x00a2, size 98304
+    sig 0x000906ed, pf_mask 0x22, 2019-02-04, rev 0x00b0, size 97280
+  * Updated Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2018-11-20, rev 0x0041, size 34816
+    sig 0x000306f4, pf_mask 0x80, 2018-11-06, rev 0x0013, size 17408
+    sig 0x00050654, pf_mask 0xb7, 2019-01-28, rev 0x200005a, size 33792
+    sig 0x00050662, pf_mask 0x10, 2018-12-06, rev 0x0019, size 32768
+    sig 0x00050663, pf_mask 0x10, 2018-12-06, rev 0x7000016, size 23552
+    sig 0x00050664, pf_mask 0x10, 2018-11-17, rev 0xf000014, size 23552
+    sig 0x00050665, pf_mask 0x10, 2018-11-17, rev 0xe00000c, size 19456
+    sig 0x000506c9, pf_mask 0x03, 2018-09-14, rev 0x0036, size 17408
+    sig 0x000506ca, pf_mask 0x03, 2018-09-20, rev 0x0010, size 15360
+    sig 0x000706a1, pf_mask 0x01, 2018-09-21, rev 0x002c, size 73728
+    sig 0x000806e9, pf_mask 0xc0, 2018-07-16, rev 0x009a, size 98304
+    sig 0x000806ea, pf_mask 0xc0, 2018-10-18, rev 0x009e, size 98304
+    sig 0x000906e9, pf_mask 0x2a, 2018-07-16, rev 0x009a, size 98304
+    sig 0x000906ea, pf_mask 0x22, 2018-12-12, rev 0x00aa, size 98304
+    sig 0x000906eb, pf_mask 0x02, 2018-12-12, rev 0x00aa, size 99328
+
+2018-08-07, 2018-08-07a:
+  * Implements L1D_FLUSH support, L1TF "Foreshadow/-NG" mitigation
+  * Implements SSBD support, Spectre v4 mitigation
+  * Disable speculation for (some) RDMSR/WRMSR, Spectre v3a fix
+  * Implements IBRS/IBPB/STIPB support, Spectre v2 mitigation for
+    sigs 0x106a5, 0x106e5, 0x20652, 0x20655
+  * New Microcodes:
+    sig 0x000206c2, pf_mask 0x03, 2018-05-08, rev 0x001f, size 11264
+    sig 0x000206e6, pf_mask 0x04, 2018-05-15, rev 0x000d, size 9216
+    sig 0x000506c2, pf_mask 0x01, 2018-05-11, rev 0x0014, size 15360
+    sig 0x000506ca, pf_mask 0x03, 2018-05-11, rev 0x000c, size 14336
+    sig 0x000506f1, pf_mask 0x01, 2018-05-11, rev 0x0024, size 10240
+  * Updated Microcodes:
+    sig 0x000106a5, pf_mask 0x03, 2018-05-11, rev 0x001d, size 12288
+    sig 0x000106e5, pf_mask 0x13, 2018-05-08, rev 0x000a, size 9216
+    sig 0x00020652, pf_mask 0x12, 2018-05-08, rev 0x0011, size 9216
+    sig 0x00020655, pf_mask 0x92, 2018-04-23, rev 0x0007, size 4096
+    sig 0x000206a7, pf_mask 0x12, 2018-04-10, rev 0x002e, size 12288
+    sig 0x000206f2, pf_mask 0x05, 2018-05-16, rev 0x003b, size 14336
+    sig 0x000306a9, pf_mask 0x12, 2018-04-10, rev 0x0020, size 13312
+    sig 0x000306c3, pf_mask 0x32, 2018-04-02, rev 0x0025, size 23552
+    sig 0x000306d4, pf_mask 0xc0, 2018-03-22, rev 0x002b, size 18432
+    sig 0x00040651, pf_mask 0x72, 2018-04-02, rev 0x0024, size 22528
+    sig 0x00040661, pf_mask 0x32, 2018-04-02, rev 0x001a, size 25600
+    sig 0x00040671, pf_mask 0x22, 2018-04-03, rev 0x001e, size 13312
+    sig 0x000406e3, pf_mask 0xc0, 2018-04-17, rev 0x00c6, size 99328
+    sig 0x00050662, pf_mask 0x10, 2018-05-25, rev 0x0017, size 31744
+    sig 0x00050663, pf_mask 0x10, 2018-04-20, rev 0x7000013, size 22528
+    sig 0x00050664, pf_mask 0x10, 2018-04-20, rev 0xf000012, size 22528
+    sig 0x000506c9, pf_mask 0x03, 2018-05-11, rev 0x0032, size 16384
+    sig 0x000506e3, pf_mask 0x36, 2018-04-17, rev 0x00c6, size 99328
+    sig 0x000706a1, pf_mask 0x01, 2018-05-22, rev 0x0028, size 73728
+    sig 0x000806e9, pf_mask 0xc0, 2018-03-24, rev 0x008e, size 98304
+    sig 0x000806ea, pf_mask 0xc0, 2018-05-15, rev 0x0096, size 98304
+    sig 0x000906e9, pf_mask 0x2a, 2018-03-24, rev 0x008e, size 98304
+    sig 0x000906ea, pf_mask 0x22, 2018-05-02, rev 0x0096, size 97280
+    sig 0x000906eb, pf_mask 0x02, 2018-03-24, rev 0x008e, size 98304
+
+2018-07-03:
+  * Implements L1D_FLUSH support, L1TF "Foreshadow/-NG" mitigation
+  * Implements SSBD support, Spectre v4 mitigation
+  * Disable speculation for (some) RDMSR/WRMSR, Spectre v3a fix
+  * Updated Microcodes:
+    sig 0x000206d6, pf_mask 0x6d, 2018-05-08, rev 0x061d, size 18432
+    sig 0x000206d7, pf_mask 0x6d, 2018-05-08, rev 0x0714, size 19456
+    sig 0x000306e4, pf_mask 0xed, 2018-04-25, rev 0x042d, size 15360
+    sig 0x000306e7, pf_mask 0xed, 2018-04-25, rev 0x0714, size 17408
+    sig 0x000306f2, pf_mask 0x6f, 2018-04-20, rev 0x003d, size 33792
+    sig 0x000306f4, pf_mask 0x80, 2018-04-20, rev 0x0012, size 17408
+    sig 0x000406f1, pf_mask 0xef, 2018-04-19, rev 0xb00002e, size 28672
+    sig 0x00050654, pf_mask 0xb7, 2018-05-15, rev 0x200004d, size 31744
+    sig 0x00050665, pf_mask 0x10, 2018-04-20, rev 0xe00000a, size 18432
+
+2018-04-25:
+  * Implements IBRS/IBPB/STIPB support, Spectre-v2 mitigation
+  * Updated Microcodes:
+    sig 0x000406f1, pf_mask 0xef, 2018-03-21, rev 0xb00002c, size 27648
+    sig 0x000706a1, pf_mask 0x01, 2017-12-26, rev 0x0022, size 73728
+
+2018-03-12:
+  * Implements IBRS/IBPB/STIPB support, Spectre-v2 mitigation
+  * New Microcodes:
+    sig 0x00050653, pf_mask 0x97, 2018-01-29, rev 0x1000140, size 30720
+    sig 0x00050665, pf_mask 0x10, 2018-01-22, rev 0xe000009, size 18432
+
+  * Updated Microcodes:
+    sig 0x000206a7, pf_mask 0x12, 2018-02-07, rev 0x002d, size 12288
+    sig 0x000206d6, pf_mask 0x6d, 2018-01-30, rev 0x061c, size 18432
+    sig 0x000206d7, pf_mask 0x6d, 2018-01-26, rev 0x0713, size 19456
+    sig 0x000306a9, pf_mask 0x12, 2018-02-07, rev 0x001f, size 13312
+    sig 0x000306c3, pf_mask 0x32, 2018-01-21, rev 0x0024, size 23552
+    sig 0x000306d4, pf_mask 0xc0, 2018-01-18, rev 0x002a, size 18432
+    sig 0x000306e4, pf_mask 0xed, 2018-01-25, rev 0x042c, size 15360
+    sig 0x000306e7, pf_mask 0xed, 2018-02-16, rev 0x0713, size 16384
+    sig 0x000306f2, pf_mask 0x6f, 2018-01-19, rev 0x003c, size 33792
+    sig 0x000306f4, pf_mask 0x80, 2018-01-22, rev 0x0011, size 17408
+    sig 0x00040651, pf_mask 0x72, 2018-01-18, rev 0x0023, size 21504
+    sig 0x00040661, pf_mask 0x32, 2018-01-21, rev 0x0019, size 25600
+    sig 0x00040671, pf_mask 0x22, 2018-01-21, rev 0x001d, size 12288
+    sig 0x000406e3, pf_mask 0xc0, 2017-11-16, rev 0x00c2, size 99328
+    sig 0x00050654, pf_mask 0xb7, 2018-01-26, rev 0x2000043, size 28672
+    sig 0x00050662, pf_mask 0x10, 2018-01-22, rev 0x0015, size 31744
+    sig 0x00050663, pf_mask 0x10, 2018-01-22, rev 0x7000012, size 22528
+    sig 0x00050664, pf_mask 0x10, 2018-01-22, rev 0xf000011, size 22528
+    sig 0x000506e3, pf_mask 0x36, 2017-11-16, rev 0x00c2, size 99328
+    sig 0x000806e9, pf_mask 0xc0, 2018-01-21, rev 0x0084, size 98304
+    sig 0x000806ea, pf_mask 0xc0, 2018-01-21, rev 0x0084, size 97280
+    sig 0x000906e9, pf_mask 0x2a, 2018-01-21, rev 0x0084, size 98304
+    sig 0x000906ea, pf_mask 0x22, 2018-01-21, rev 0x0084, size 96256
+    sig 0x000906eb, pf_mask 0x02, 2018-01-21, rev 0x0084, size 98304
+
+2018-01-08:
+  * This release has been officially recalled by Intel
+  * Updated Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2017-11-20, rev 0x0023, size 23552
+    sig 0x000306d4, pf_mask 0xc0, 2017-11-17, rev 0x0028, size 18432
+    sig 0x000306e4, pf_mask 0xed, 2017-12-01, rev 0x042a, size 15360
+    sig 0x000306f2, pf_mask 0x6f, 2017-11-17, rev 0x003b, size 33792
+    sig 0x000306f4, pf_mask 0x80, 2017-11-17, rev 0x0010, size 17408
+    sig 0x00040651, pf_mask 0x72, 2017-11-20, rev 0x0021, size 22528
+    sig 0x00040661, pf_mask 0x32, 2017-11-20, rev 0x0018, size 25600
+    sig 0x00040671, pf_mask 0x22, 2017-11-17, rev 0x001b, size 13312
+    sig 0x000406e3, pf_mask 0xc0, 2017-11-16, rev 0x00c2, size 99328
+    sig 0x00050654, pf_mask 0xb7, 2017-12-08, rev 0x200003c, size 27648
+    sig 0x00050662, pf_mask 0x10, 2017-12-16, rev 0x0014, size 31744
+    sig 0x00050663, pf_mask 0x10, 2017-12-16, rev 0x7000011, size 22528
+    sig 0x000506e3, pf_mask 0x36, 2017-11-16, rev 0x00c2, size 99328
+    sig 0x000706a1, pf_mask 0x01, 2017-12-26, rev 0x0022, size 73728
+    sig 0x000806e9, pf_mask 0xc0, 2018-01-04, rev 0x0080, size 98304
+    sig 0x000806ea, pf_mask 0xc0, 2018-01-04, rev 0x0080, size 98304
+    sig 0x000906e9, pf_mask 0x2a, 2018-01-04, rev 0x0080, size 98304
+    sig 0x000906ea, pf_mask 0x22, 2018-01-04, rev 0x0080, size 97280
+    sig 0x000906eb, pf_mask 0x02, 2018-01-04, rev 0x0080, size 98304
+
+2017-11-17:
+  * New Microcodes:
+    sig 0x000506c9, pf_mask 0x03, 2017-03-25, rev 0x002c, size 16384
+    sig 0x000706a1, pf_mask 0x01, 2017-10-31, rev 0x001e, size 72704
+    sig 0x000906ea, pf_mask 0x22, 2017-08-23, rev 0x0070, size 95232
+    sig 0x000906eb, pf_mask 0x02, 2017-09-20, rev 0x0072, size 97280
+
+  * Updated Microcodes:
+    sig 0x00050654, pf_mask 0xb7, 2017-10-17, rev 0x2000035, size 26624
+    sig 0x000806ea, pf_mask 0xc0, 2017-08-03, rev 0x0070, size 96256
+
+2017-07-07:
+  * New Microcodes:
+    sig 0x00050654, pf_mask 0x97, 2017-06-01, rev 0x2000022, size 25600
+    sig 0x000806e9, pf_mask 0xc0, 2017-04-27, rev 0x0062, size 97280
+    sig 0x000806ea, pf_mask 0xc0, 2017-05-23, rev 0x0066, size 95232
+    sig 0x000906e9, pf_mask 0x2a, 2017-04-06, rev 0x005e, size 97280
+
+2017-05-11:
+  * Updated Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2017-01-27, rev 0x0022, size 22528
+    sig 0x000306d4, pf_mask 0xc0, 2017-01-27, rev 0x0025, size 17408
+    sig 0x000306f2, pf_mask 0x6f, 2017-01-30, rev 0x003a, size 32768
+    sig 0x000306f4, pf_mask 0x80, 2017-01-30, rev 0x000f, size 16384
+    sig 0x00040651, pf_mask 0x72, 2017-01-27, rev 0x0020, size 20480
+    sig 0x00040661, pf_mask 0x32, 2017-01-27, rev 0x0017, size 24576
+    sig 0x00040671, pf_mask 0x22, 2017-01-27, rev 0x0017, size 11264
+    sig 0x000406e3, pf_mask 0xc0, 2017-04-09, rev 0x00ba, size 98304
+    sig 0x000406f1, pf_mask 0xef, 2017-03-01, rev 0xb000021, size 26624
+    sig 0x000506e3, pf_mask 0x36, 2017-04-09, rev 0x00ba, size 98304
+
+2016-11-04:
+  * New Microcodes:
+    sig 0x00050663, pf_mask 0x10, 2016-10-12, rev 0x700000d, size 20480
+    sig 0x00050664, pf_mask 0x10, 2016-06-02, rev 0xf00000a, size 21504
+
+  * Updated Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2016-10-07, rev 0x0039, size 32768
+    sig 0x000406f1, pf_mask 0xef, 2016-10-07, rev 0xb00001f, size 25600
+
+  * Removed Microcodes:
+    sig 0x000106e4, pf_mask 0x09, 2013-07-01, rev 0x0003, size 6144
+
+2016-07-14:
+  * Updated Microcodes:
+    sig 0x000306f4, pf_mask 0x80, 2016-06-07, rev 0x000d, size 15360
+    sig 0x000406e3, pf_mask 0xc0, 2016-06-22, rev 0x009e, size 97280
+    sig 0x000406f1, pf_mask 0xef, 2016-06-06, rev 0xb00001d, size 25600
+    sig 0x000506e3, pf_mask 0x36, 2016-06-22, rev 0x009e, size 97280
+
+2016-06-07:
+  * New Microcodes:
+    sig 0x000406e3, pf_mask 0xc0, 2016-04-06, rev 0x008a, size 96256
+    sig 0x000406f1, pf_mask 0xef, 2016-05-20, rev 0xb00001c, size 25600
+    sig 0x00050662, pf_mask 0x10, 2015-12-12, rev 0x000f, size 28672
+    sig 0x000506e3, pf_mask 0x36, 2016-04-06, rev 0x008a, size 96256
+
+  * Updated Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2016-03-16, rev 0x0020, size 22528
+    sig 0x000306d4, pf_mask 0xc0, 2016-04-29, rev 0x0024, size 17408
+    sig 0x000306f2, pf_mask 0x6f, 2016-03-28, rev 0x0038, size 32768
+    sig 0x000306f4, pf_mask 0x80, 2016-02-11, rev 0x000a, size 15360
+    sig 0x00040651, pf_mask 0x72, 2016-04-01, rev 0x001f, size 20480
+    sig 0x00040661, pf_mask 0x32, 2016-04-01, rev 0x0016, size 24576
+    sig 0x00040671, pf_mask 0x22, 2016-04-29, rev 0x0016, size 11264
+
+2015-11-06:
+  * New Microcodes:
+    sig 0x000306f4, pf_mask 0x80, 2015-07-17, rev 0x0009, size 14336
+    sig 0x00040671, pf_mask 0x22, 2015-08-03, rev 0x0013, size 11264
+
+  * Updated Microcodes:
+    sig 0x000306a9, pf_mask 0x12, 2015-02-26, rev 0x001c, size 12288
+    sig 0x000306c3, pf_mask 0x32, 2015-08-13, rev 0x001e, size 21504
+    sig 0x000306d4, pf_mask 0xc0, 2015-09-11, rev 0x0022, size 16384
+    sig 0x000306f2, pf_mask 0x6f, 2015-08-10, rev 0x0036, size 30720
+    sig 0x00040651, pf_mask 0x72, 2015-08-13, rev 0x001d, size 20480
+
+2015-01-21:
+  * Downgraded microcodes (to a previously shipped revision):
+    sig 0x000306f2, pf_mask 0x6f, 2014-09-03, rev 0x0029, size 28672
+
+2015-01-07:
+  * New Microcodes:
+    sig 0x000306d4, pf_mask 0xc0, 2014-12-05, rev 0x0018, size 14336
+
+  * Updated Microcodes (this update is known to cause issues):
+    sig 0x000306f2, pf_mask 0x6f, 2014-11-21, rev 0x002d, size 28672
+
+2014-09-13:
+  * New Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2014-09-03, rev 0x0029, size 28672
+
+  * Updated Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2014-07-03, rev 0x001c, size 21504
+    sig 0x00040651, pf_mask 0x72, 2014-07-03, rev 0x001c, size 20480
+    sig 0x00040661, pf_mask 0x32, 2014-07-03, rev 0x0012, size 23552
+
+2014-06-24:
+  * Updated Microcodes:
+    sig 0x000306a9, pf_mask 0x12, 2014-05-29, rev 0x001b, size 12288
+    sig 0x000306c3, pf_mask 0x32, 2014-05-23, rev 0x001a, size 20480
+    sig 0x000306e4, pf_mask 0xed, 2014-05-29, rev 0x0428, size 13312
+    sig 0x000306e7, pf_mask 0xed, 2014-05-29, rev 0x070d, size 15360
+    sig 0x00040651, pf_mask 0x72, 2014-05-23, rev 0x0018, size 19456
+    sig 0x00040661, pf_mask 0x32, 2014-05-23, rev 0x0010, size 23552
+
+2014-04-30:
+  * New microcodes:
+    sig 0x000306e7, pf_mask 0xed, 2014-04-14, rev 0x070c, size 15360
+
+  * Updated microcodes:
+    sig 0x000306e4, pf_mask 0xed, 2014-04-10, rev 0x0427, size 12288
+
+2014-01-22:
+  * New Microcodes:
+    sig 0x00040661, pf_mask 0x32, 2013-08-21, rev 0x000f, size 23552
+
+  * Updated Microcodes:
+    sig 0x000106e5, pf_mask 0x13, 2013-08-20, rev 0x0007, size 7168
+    sig 0x000306c3, pf_mask 0x32, 2013-08-16, rev 0x0017, size 20480
+    sig 0x000306e4, pf_mask 0xed, 2013-07-09, rev 0x0416, size 11264
+    sig 0x00040651, pf_mask 0x72, 2013-09-14, rev 0x0017, size 19456
+
+2013-09-06:
+  * Updated Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2013-08-07, rev 0x0016, size 20480
+    sig 0x00040651, pf_mask 0x72, 2013-08-08, rev 0x0016, size 19456
+
+  * Updated Microcodes (recently removed):
+    sig 0x000106e4, pf_mask 0x09, 2013-07-01, rev 0x0003, size 6144
+
+2013-08-08:
+  * New Microcodes:
+    sig 0x000306c3, pf_mask 0x32, 2013-07-02, rev 0x0012, size 19456
+    sig 0x000306e4, pf_mask 0xed, 2013-06-13, rev 0x0415, size 11264
+    sig 0x000306e6, pf_mask 0xed, 2013-06-19, rev 0x0600, size 11264
+    sig 0x00040651, pf_mask 0x72, 2013-07-02, rev 0x0015, size 18432
+
+  * Updated Microcodes (removed in the past):
+    sig 0x000106a5, pf_mask 0x03, 2013-06-21, rev 0x0019, size 10240
+
+  * Updated Microcodes:
+    sig 0x000106a4, pf_mask 0x03, 2013-06-21, rev 0x0012, size 14336
+    sig 0x000106e5, pf_mask 0x13, 2013-07-01, rev 0x0006, size 7168
+    sig 0x00020652, pf_mask 0x12, 2013-06-26, rev 0x000e, size 8192
+    sig 0x00020655, pf_mask 0x92, 2013-06-28, rev 0x0004, size 3072
+    sig 0x000206a7, pf_mask 0x12, 2013-06-12, rev 0x0029, size 10240
+    sig 0x000206d7, pf_mask 0x6d, 2013-06-17, rev 0x0710, size 17408
+    sig 0x000206f2, pf_mask 0x05, 2013-06-18, rev 0x0037, size 13312
+    sig 0x000306a9, pf_mask 0x12, 2013-06-13, rev 0x0019, size 12288
+
+  * Removed Microcodes:
+    sig 0x000106e4, pf_mask 0x09, 2010-03-08, rev 0x0002, size 5120
+
+2013-02-22:
+  * Updated Microcodes:
+    sig 0x000306a9, pf_mask 0x12, 2013-01-09, rev 0x0017, size 11264
+
+2012-06-06-v2 (2012-10-01):
+  * Updated Microcodes:
+    sig 0x000206d6, pf_mask 0x6d, 2012-05-22, rev 0x0619, size 16384
+    sig 0x000206d7, pf_mask 0x6d, 2012-05-22, rev 0x070d, size 16384
+    sig 0x000306a9, pf_mask 0x12, 2012-07-16, rev 0x0013, size 11264
+
+  * Updated Microcodes (recently removed):
+    sig 0x000206f2, pf_mask 0x05, 2012-04-12, rev 0x0036, size 12288
+
+2012-06-06:
+  * New Microcodes:
+    sig 0x00020661, pf_mask 0x02, 2011-07-18, rev 0x0105, size 5120
+    sig 0x000206d7, pf_mask 0x6d, 2012-04-03, rev 0x070c, size 16384
+    sig 0x000306a9, pf_mask 0x12, 2012-04-12, rev 0x0012, size 11264
+
+  * Updated Microcodes:
+    sig 0x000106e5, pf_mask 0x13, 2011-09-01, rev 0x0005, size 6144
+    sig 0x000206a7, pf_mask 0x12, 2012-04-24, rev 0x0028, size 9216
+    sig 0x000206d6, pf_mask 0x6d, 2012-04-18, rev 0x0618, size 16384
+
+  * Removed Microcodes (recently updated):
+    sig 0x000206f2, pf_mask 0x05, 2011-08-31, rev 0x0034, size 12288
+
+2011-11-10:
+  * New Microcodes:
+    sig 0x000206d6, pf_mask 0x6d, 2011-09-29, rev 0x060c, size 15360
+
+  * Updated Microcodes:
+    sig 0x00020652, pf_mask 0x12, 2011-09-01, rev 0x000d, size 7168
+    sig 0x00020655, pf_mask 0x92, 2011-09-01, rev 0x0003, size 2048
+    sig 0x000206a7, pf_mask 0x12, 2011-10-11, rev 0x0025, size 9216
+    sig 0x000206f2, pf_mask 0x05, 2011-08-31, rev 0x0034, size 12288
+
+  * Removed Microcodes (recently added):
+    sig 0x00030661, pf_mask 0x02, 2011-06-23, rev 0x0106, size 5120
+    sig 0x00030661, pf_mask 0x04, 2011-06-23, rev 0x0106, size 5120
+    sig 0x00030661, pf_mask 0x08, 2011-06-23, rev 0x0106, size 5120
+
+2011-09-15:
+  * New Microcodes:
+    sig 0x000206f2, pf_mask 0x05, 2011-07-21, rev 0x0032, size 12288
+    sig 0x00030661, pf_mask 0x02, 2011-06-23, rev 0x0106, size 5120
+    sig 0x00030661, pf_mask 0x04, 2011-06-23, rev 0x0106, size 5120
+    sig 0x00030661, pf_mask 0x08, 2011-06-23, rev 0x0106, size 5120
+
+  * Updated Microcodes:
+    sig 0x000206a7, pf_mask 0x12, 2011-07-14, rev 0x001b, size 9216
+
+2011-04-28:
+  * New Microcodes:
+    sig 0x000206a7, pf_mask 0x12, 2011-04-07, rev 0x0017, size 8192
+
+  * Added back microcodes (unchanged, removed in the past):
+    sig 0x00000f12, pf_mask 0x04, 2003-05-02, rev 0x002e, size 2048
+
+  * Removed Microcodes (recently rolled back):
+    sig 0x000106a5, pf_mask 0x03, 2009-04-14, rev 0x0011, size 8192
+
+2010-11-23:
+  * New Microcodes:
+    sig 0x000006fb, pf_mask 0x20, 2010-10-03, rev 0x00ba, size 4096
+
+  * Readded Microcodes (older revision):
+    sig 0x000106a5, pf_mask 0x03, 2009-04-14, rev 0x0011, size 8192
+
+  * Updated Microcodes:
+    sig 0x000006f2, pf_mask 0x01, 2010-10-02, rev 0x005d, size 4096
+    sig 0x000006f2, pf_mask 0x20, 2010-10-02, rev 0x005c, size 4096
+    sig 0x000006f6, pf_mask 0x01, 2010-09-30, rev 0x00d0, size 4096
+    sig 0x000006f6, pf_mask 0x04, 2010-10-01, rev 0x00d2, size 4096
+    sig 0x000006f6, pf_mask 0x20, 2010-10-01, rev 0x00d1, size 4096
+    sig 0x000006f7, pf_mask 0x10, 2010-10-02, rev 0x006a, size 4096
+    sig 0x000006f7, pf_mask 0x40, 2010-10-02, rev 0x006b, size 4096
+    sig 0x000006fa, pf_mask 0x80, 2010-10-02, rev 0x0095, size 4096
+    sig 0x000006fb, pf_mask 0x01, 2010-10-03, rev 0x00ba, size 4096
+    sig 0x000006fb, pf_mask 0x04, 2010-10-03, rev 0x00bc, size 4096
+    sig 0x000006fb, pf_mask 0x08, 2010-10-03, rev 0x00bb, size 4096
+    sig 0x000006fb, pf_mask 0x10, 2010-10-03, rev 0x00ba, size 4096
+    sig 0x000006fb, pf_mask 0x40, 2010-10-03, rev 0x00bc, size 4096
+    sig 0x000006fb, pf_mask 0x80, 2010-10-03, rev 0x00ba, size 4096
+    sig 0x000006fd, pf_mask 0x01, 2010-10-02, rev 0x00a4, size 4096
+    sig 0x000006fd, pf_mask 0x20, 2010-10-02, rev 0x00a4, size 4096
+    sig 0x000006fd, pf_mask 0x80, 2010-10-02, rev 0x00a4, size 4096
+    sig 0x00010661, pf_mask 0x01, 2010-10-04, rev 0x0043, size 4096
+    sig 0x00010661, pf_mask 0x02, 2010-10-04, rev 0x0042, size 4096
+    sig 0x00010661, pf_mask 0x80, 2010-10-04, rev 0x0044, size 4096
+    sig 0x00010676, pf_mask 0x01, 2010-09-29, rev 0x060f, size 4096
+    sig 0x00010676, pf_mask 0x04, 2010-09-29, rev 0x060f, size 4096
+    sig 0x00010676, pf_mask 0x10, 2010-09-29, rev 0x060f, size 4096
+    sig 0x00010676, pf_mask 0x40, 2010-09-29, rev 0x060f, size 4096
+    sig 0x00010676, pf_mask 0x80, 2010-09-29, rev 0x060f, size 4096
+    sig 0x00010677, pf_mask 0x10, 2010-09-29, rev 0x070a, size 4096
+    sig 0x0001067a, pf_mask 0x11, 2010-09-28, rev 0x0a0b, size 8192
+    sig 0x0001067a, pf_mask 0x44, 2010-09-28, rev 0x0a0b, size 8192
+    sig 0x0001067a, pf_mask 0xa0, 2010-09-28, rev 0x0a0b, size 8192
+    sig 0x000106d1, pf_mask 0x08, 2010-09-30, rev 0x0029, size 4096
+
+  * Removed Microcodes:
+    sig 0x00000612, pf_mask 0x00, 1996-12-10, rev 0x00c6, size 2048
+    sig 0x00000616, pf_mask 0x00, 1996-12-10, rev 0x00c6, size 2048
+    sig 0x00000617, pf_mask 0x00, 1996-12-10, rev 0x00c6, size 2048
+    sig 0x00000619, pf_mask 0x00, 1998-02-18, rev 0x00d2, size 2048
+    sig 0x00000633, pf_mask 0x00, 1998-09-23, rev 0x0036, size 2048
+    sig 0x00000634, pf_mask 0x00, 1998-09-23, rev 0x0037, size 2048
+    sig 0x00000650, pf_mask 0x04, 1997-12-12, rev 0x0019, size 2048
+    sig 0x00000650, pf_mask 0x20, 1998-02-11, rev 0x002e, size 2048
+    sig 0x00000650, pf_mask 0x80, 1998-02-11, rev 0x002f, size 2048
+    sig 0x00000651, pf_mask 0x02, 1999-05-25, rev 0x0041, size 2048
+    sig 0x00000651, pf_mask 0x08, 1999-05-25, rev 0x0042, size 2048
+    sig 0x00000652, pf_mask 0x08, 1999-05-18, rev 0x002d, size 2048
+    sig 0x00000672, pf_mask 0x01, 1999-09-22, rev 0x0010, size 2048
+    sig 0x00000673, pf_mask 0x01, 1999-09-10, rev 0x000e, size 2048
+    sig 0x00000683, pf_mask 0x01, 2001-02-06, rev 0x0013, size 2048
+    sig 0x00000683, pf_mask 0x04, 2001-02-06, rev 0x0010, size 2048
+    sig 0x00000683, pf_mask 0x10, 2001-02-06, rev 0x0014, size 2048
+    sig 0x000006a4, pf_mask 0x04, 2000-06-16, rev 0x0001, size 2048
+    sig 0x00000f12, pf_mask 0x01, 2003-05-02, rev 0x002d, size 2048
+    sig 0x00000f12, pf_mask 0x02, 2003-05-02, rev 0x002f, size 2048
+    sig 0x00000f12, pf_mask 0x04, 2003-05-02, rev 0x002e, size 2048
+    sig 0x00000f13, pf_mask 0x04, 2003-05-08, rev 0x0005, size 2048
+    sig 0x00000f24, pf_mask 0x08, 2003-06-05, rev 0x0020, size 2048
+
+  * Removed Microcodes (recently added/updated):
+    sig 0x000206c2, pf_mask 0x03, 2010-09-07, rev 0x0013, size 7168
+
+2010-09-14:
+  * Updated Microcodes:
+    sig 0x000206c2, pf_mask 0x03, 2010-09-07, rev 0x0013, size 7168
+
+  * Removed Microcodes:
+    sig 0x000006d8, pf_mask 0x08, 2006-08-31, rev 0x0021, size 2048
+    sig 0x000006d8, pf_mask 0x20, 2004-07-22, rev 0x0020, size 2048
+    sig 0x00000f65, pf_mask 0x04, 2007-05-10, rev 0x000b, size 2048
+    sig 0x00010661, pf_mask 0x04, 2007-05-01, rev 0x0036, size 4096
+
+  * Removed Microcodes (recently added/updated):
+    sig 0x000106a5, pf_mask 0x03, 2010-03-03, rev 0x0015, size 8192
+    sig 0x000206e6, pf_mask 0x04, 2010-04-21, rev 0x0007, size 6144
+
+2010-08-26:
+  * New Microcodes:
+    sig 0x000106ca, pf_mask 0x01, 2009-08-25, rev 0x0107, size 5120
+    sig 0x000106e4, pf_mask 0x09, 2010-03-08, rev 0x0002, size 5120
+    sig 0x00020655, pf_mask 0x92, 2010-03-01, rev 0x0002, size 2048
+    sig 0x000206c2, pf_mask 0x03, 2010-06-18, rev 0x000f, size 7168
+
+  * Updated Microcodes:
+    sig 0x000106a5, pf_mask 0x03, 2010-03-03, rev 0x0015, size 8192
+    sig 0x000106e5, pf_mask 0x13, 2010-04-05, rev 0x0004, size 6144
+    sig 0x00020652, pf_mask 0x12, 2010-06-10, rev 0x000c, size 7168
+    sig 0x000206e6, pf_mask 0x04, 2010-04-21, rev 0x0007, size 6144
+
+2010-02-09:
+  * New Microcodes:
+    sig 0x000106ca, pf_mask 0x04, 2009-08-25, rev 0x0107, size 5120
+    sig 0x000106ca, pf_mask 0x08, 2009-08-25, rev 0x0107, size 5120
+    sig 0x000106ca, pf_mask 0x10, 2009-08-25, rev 0x0107, size 5120
+    sig 0x00020652, pf_mask 0x12, 2009-11-12, rev 0x0009, size 7168
+    sig 0x00020661, pf_mask 0x01, 2009-10-23, rev 0x0104, size 5120
+    sig 0x000206e6, pf_mask 0x04, 2009-12-08, rev 0x0002, size 6144
+
+2009-09-27:
+  * New Microcodes:
+    sig 0x00010676, pf_mask 0x80, 2008-01-19, rev 0x060c, size 4096
+    sig 0x0001067a, pf_mask 0x11, 2008-04-09, rev 0x0a07, size 8192
+    sig 0x0001067a, pf_mask 0xa0, 2008-04-09, rev 0x0a07, size 8192
+    sig 0x000106e5, pf_mask 0x13, 2009-05-29, rev 0x0003, size 6144
+
+  * Updated Microcodes:
+    sig 0x000006f6, pf_mask 0x20, 2007-09-16, rev 0x00cc, size 4096
+    sig 0x000006fb, pf_mask 0x04, 2009-05-11, rev 0x00b9, size 4096
+    sig 0x000006fb, pf_mask 0x08, 2009-04-28, rev 0x00b8, size 4096
+    sig 0x000006fb, pf_mask 0x40, 2009-05-11, rev 0x00b9, size 4096
+    sig 0x00010676, pf_mask 0x01, 2008-01-19, rev 0x060c, size 4096
+    sig 0x00010677, pf_mask 0x10, 2008-04-28, rev 0x0705, size 8192
+    sig 0x000106a4, pf_mask 0x03, 2009-04-21, rev 0x0011, size 13312
+    sig 0x000106a5, pf_mask 0x03, 2009-04-14, rev 0x0011, size 8192
+    sig 0x000106c2, pf_mask 0x01, 2009-04-10, rev 0x0217, size 5120
+    sig 0x000106c2, pf_mask 0x04, 2009-04-10, rev 0x0218, size 5120
+    sig 0x000106c2, pf_mask 0x08, 2009-04-10, rev 0x0219, size 5120
+    sig 0x000106d1, pf_mask 0x08, 2009-04-06, rev 0x0026, size 4096
+
+2009-03-30:
+  * New Microcodes:
+    sig 0x000006fb, pf_mask 0x80, 2007-07-13, rev 0x00b6, size 4096
+    sig 0x000006fd, pf_mask 0x20, 2007-08-13, rev 0x00a3, size 4096
+    sig 0x000106a4, pf_mask 0x03, 2009-02-20, rev 0x0010, size 10240
+    sig 0x000106a5, pf_mask 0x03, 2009-02-20, rev 0x000f, size 6144
+
+  * Updated Microcodes:
+    sig 0x000006fa, pf_mask 0x80, 2007-09-24, rev 0x0094, size 4096
+    sig 0x000006fd, pf_mask 0x80, 2007-08-13, rev 0x00a3, size 4096
+    sig 0x000106c2, pf_mask 0x01, 2008-10-06, rev 0x0211, size 5120
+    sig 0x000106c2, pf_mask 0x04, 2008-10-06, rev 0x0212, size 5120
+    sig 0x000106c2, pf_mask 0x08, 2008-12-02, rev 0x0213, size 5120
+
+  * Removed Microcodes:
+    sig 0x00000611, pf_mask 0x00, 1996-12-18, rev 0x0b27, size 2048
+    sig 0x00000680, pf_mask 0x08, 1999-05-25, rev 0x000d, size 2048
+    sig 0x00000680, pf_mask 0x20, 1999-05-25, rev 0x000c, size 2048
+    sig 0x00000696, pf_mask 0x10, 2000-07-07, rev 0x0001, size 2048
+    sig 0x000106c1, pf_mask 0x01, 2007-12-03, rev 0x0109, size 5120
+
+2008-09-10:
+  * New Microcodes:
+    sig 0x0001067a, pf_mask 0x44, 2008-04-09, rev 0x0a07, size 8192
+    sig 0x000106c2, pf_mask 0x04, 2008-06-04, rev 0x020a, size 5120
+    sig 0x000106c2, pf_mask 0x08, 2008-07-10, rev 0x020d, size 5120
+
+  * Updated Microcodes:
+    sig 0x00010676, pf_mask 0x04, 2008-01-19, rev 0x060c, size 4096
+    sig 0x00010676, pf_mask 0x10, 2008-01-19, rev 0x060c, size 4096
+    sig 0x00010676, pf_mask 0x40, 2008-01-19, rev 0x060c, size 4096
+    sig 0x000106c2, pf_mask 0x01, 2008-06-04, rev 0x020a, size 5120
+    sig 0x000106d1, pf_mask 0x08, 2008-06-04, rev 0x0021, size 4096
+
+2008-04-01:
+  * New Microcodes:
+    sig 0x000106c2, pf_mask 0x01, 2008-03-04, rev 0x0207, size 5120
+    sig 0x000106d1, pf_mask 0x08, 2008-02-02, rev 0x0010, size 4096
+
+  * Updated Microcodes:
+    sig 0x00000f48, pf_mask 0x02, 2008-01-15, rev 0x000e, size 3072
+
+  * Removed Microcodes:
+    sig 0x00000f11, pf_mask 0x02, 2003-07-29, rev 0x000a, size 2048
+    sig 0x00000f22, pf_mask 0x02, 2003-07-29, rev 0x0005, size 2048
+
+2008-02-20:
+  * License text update, no microcode changes.
+
+  * Sunrise: this release ships the microcodes:
+    sig 0x00000611, pf_mask 0x00, 1996-12-18, rev 0x0b27, size 2048
+    sig 0x00000612, pf_mask 0x00, 1996-12-10, rev 0x00c6, size 2048
+    sig 0x00000616, pf_mask 0x00, 1996-12-10, rev 0x00c6, size 2048
+    sig 0x00000617, pf_mask 0x00, 1996-12-10, rev 0x00c6, size 2048
+    sig 0x00000619, pf_mask 0x00, 1998-02-18, rev 0x00d2, size 2048
+    sig 0x00000633, pf_mask 0x00, 1998-09-23, rev 0x0036, size 2048
+    sig 0x00000634, pf_mask 0x00, 1998-09-23, rev 0x0037, size 2048
+    sig 0x00000650, pf_mask 0x01, 1999-05-25, rev 0x0040, size 2048
+    sig 0x00000650, pf_mask 0x02, 1999-05-25, rev 0x0041, size 2048
+    sig 0x00000650, pf_mask 0x04, 1997-12-12, rev 0x0019, size 2048
+    sig 0x00000650, pf_mask 0x08, 1999-05-25, rev 0x0045, size 2048
+    sig 0x00000650, pf_mask 0x20, 1998-02-11, rev 0x002e, size 2048
+    sig 0x00000650, pf_mask 0x80, 1998-02-11, rev 0x002f, size 2048
+    sig 0x00000651, pf_mask 0x01, 1999-05-25, rev 0x0040, size 2048
+    sig 0x00000651, pf_mask 0x02, 1999-05-25, rev 0x0041, size 2048
+    sig 0x00000651, pf_mask 0x08, 1999-05-25, rev 0x0042, size 2048
+    sig 0x00000652, pf_mask 0x01, 1999-05-12, rev 0x002a, size 2048
+    sig 0x00000652, pf_mask 0x02, 1999-05-17, rev 0x002c, size 2048
+    sig 0x00000652, pf_mask 0x04, 1999-05-12, rev 0x002b, size 2048
+    sig 0x00000652, pf_mask 0x08, 1999-05-18, rev 0x002d, size 2048
+    sig 0x00000653, pf_mask 0x01, 1999-06-28, rev 0x0010, size 2048
+    sig 0x00000653, pf_mask 0x02, 1999-05-18, rev 0x000c, size 2048
+    sig 0x00000653, pf_mask 0x04, 1999-05-20, rev 0x000b, size 2048
+    sig 0x00000653, pf_mask 0x08, 1999-05-18, rev 0x000d, size 2048
+    sig 0x00000660, pf_mask 0x01, 1999-05-05, rev 0x000a, size 2048
+    sig 0x00000665, pf_mask 0x10, 1999-05-05, rev 0x0003, size 2048
+    sig 0x0000066a, pf_mask 0x02, 1999-05-05, rev 0x000c, size 2048
+    sig 0x0000066a, pf_mask 0x08, 1999-05-05, rev 0x000d, size 2048
+    sig 0x0000066a, pf_mask 0x20, 1999-05-05, rev 0x000b, size 2048
+    sig 0x0000066d, pf_mask 0x02, 1999-03-12, rev 0x0005, size 2048
+    sig 0x0000066d, pf_mask 0x08, 1999-03-12, rev 0x0006, size 2048
+    sig 0x0000066d, pf_mask 0x20, 1999-05-05, rev 0x0007, size 2048
+    sig 0x00000671, pf_mask 0x04, 1998-08-11, rev 0x0014, size 2048
+    sig 0x00000672, pf_mask 0x01, 1999-09-22, rev 0x0010, size 2048
+    sig 0x00000672, pf_mask 0x04, 1999-09-22, rev 0x0038, size 2048
+    sig 0x00000673, pf_mask 0x01, 1999-09-10, rev 0x000e, size 2048
+    sig 0x00000673, pf_mask 0x04, 1999-09-10, rev 0x002e, size 2048
+    sig 0x00000680, pf_mask 0x08, 1999-05-25, rev 0x000d, size 2048
+    sig 0x00000680, pf_mask 0x20, 1999-05-25, rev 0x000c, size 2048
+    sig 0x00000681, pf_mask 0x01, 1999-09-21, rev 0x000d, size 2048
+    sig 0x00000681, pf_mask 0x04, 1999-09-21, rev 0x0010, size 2048
+    sig 0x00000681, pf_mask 0x08, 1999-09-21, rev 0x000f, size 2048
+    sig 0x00000681, pf_mask 0x10, 1999-09-21, rev 0x0011, size 2048
+    sig 0x00000681, pf_mask 0x20, 1999-09-21, rev 0x000e, size 2048
+    sig 0x00000683, pf_mask 0x01, 2001-02-06, rev 0x0013, size 2048
+    sig 0x00000683, pf_mask 0x04, 2001-02-06, rev 0x0010, size 2048
+    sig 0x00000683, pf_mask 0x08, 1999-10-15, rev 0x0008, size 2048
+    sig 0x00000683, pf_mask 0x10, 2001-02-06, rev 0x0014, size 2048
+    sig 0x00000683, pf_mask 0x20, 1999-10-15, rev 0x0007, size 2048
+    sig 0x00000686, pf_mask 0x01, 2000-05-05, rev 0x0007, size 2048
+    sig 0x00000686, pf_mask 0x02, 2000-05-04, rev 0x000a, size 2048
+    sig 0x00000686, pf_mask 0x04, 2000-05-04, rev 0x0002, size 2048
+    sig 0x00000686, pf_mask 0x10, 2000-05-05, rev 0x0008, size 2048
+    sig 0x00000686, pf_mask 0x80, 2000-05-04, rev 0x000c, size 2048
+    sig 0x0000068a, pf_mask 0x10, 2000-11-02, rev 0x0001, size 2048
+    sig 0x0000068a, pf_mask 0x20, 2000-12-07, rev 0x0004, size 2048
+    sig 0x0000068a, pf_mask 0x80, 2000-12-07, rev 0x0005, size 2048
+    sig 0x00000695, pf_mask 0x10, 2004-11-09, rev 0x0007, size 2048
+    sig 0x00000695, pf_mask 0x20, 2004-11-09, rev 0x0007, size 2048
+    sig 0x00000695, pf_mask 0x80, 2004-11-09, rev 0x0047, size 2048
+    sig 0x00000696, pf_mask 0x10, 2000-07-07, rev 0x0001, size 2048
+    sig 0x000006a0, pf_mask 0x04, 2000-01-10, rev 0x0003, size 2048
+    sig 0x000006a1, pf_mask 0x04, 2000-03-06, rev 0x0001, size 2048
+    sig 0x000006a4, pf_mask 0x04, 2000-06-16, rev 0x0001, size 2048
+    sig 0x000006b1, pf_mask 0x10, 2001-02-15, rev 0x001c, size 2048
+    sig 0x000006b1, pf_mask 0x20, 2001-02-20, rev 0x001d, size 2048
+    sig 0x000006b4, pf_mask 0x10, 2002-01-10, rev 0x0001, size 2048
+    sig 0x000006b4, pf_mask 0x20, 2002-01-11, rev 0x0002, size 2048
+    sig 0x000006d6, pf_mask 0x20, 2004-10-17, rev 0x0018, size 2048
+    sig 0x000006d8, pf_mask 0x08, 2006-08-31, rev 0x0021, size 2048
+    sig 0x000006d8, pf_mask 0x20, 2004-07-22, rev 0x0020, size 2048
+    sig 0x000006e8, pf_mask 0x20, 2005-11-15, rev 0x0039, size 4096
+    sig 0x000006ec, pf_mask 0x20, 2006-05-01, rev 0x0054, size 4096
+    sig 0x000006ec, pf_mask 0x80, 2006-09-12, rev 0x0059, size 4096
+    sig 0x000006f2, pf_mask 0x01, 2007-09-26, rev 0x005a, size 4096
+    sig 0x000006f2, pf_mask 0x20, 2007-03-15, rev 0x0057, size 4096
+    sig 0x000006f6, pf_mask 0x01, 2007-09-16, rev 0x00cb, size 4096
+    sig 0x000006f6, pf_mask 0x04, 2007-09-16, rev 0x00cd, size 4096
+    sig 0x000006f6, pf_mask 0x20, 2007-03-15, rev 0x00c7, size 4096
+    sig 0x000006f7, pf_mask 0x10, 2007-09-16, rev 0x0068, size 4096
+    sig 0x000006f7, pf_mask 0x40, 2007-09-17, rev 0x0069, size 4096
+    sig 0x000006fa, pf_mask 0x80, 2007-03-13, rev 0x0092, size 4096
+    sig 0x000006fb, pf_mask 0x01, 2007-07-13, rev 0x00b6, size 4096
+    sig 0x000006fb, pf_mask 0x04, 2007-08-06, rev 0x00b7, size 4096
+    sig 0x000006fb, pf_mask 0x08, 2007-07-13, rev 0x00b6, size 4096
+    sig 0x000006fb, pf_mask 0x10, 2007-07-13, rev 0x00b6, size 4096
+    sig 0x000006fb, pf_mask 0x40, 2007-08-06, rev 0x00b7, size 4096
+    sig 0x000006fd, pf_mask 0x01, 2007-08-13, rev 0x00a3, size 4096
+    sig 0x000006fd, pf_mask 0x80, 2007-03-13, rev 0x00a1, size 4096
+    sig 0x00000f07, pf_mask 0x01, 2002-07-16, rev 0x0012, size 2048
+    sig 0x00000f07, pf_mask 0x02, 2000-11-15, rev 0x0008, size 2048
+    sig 0x00000f0a, pf_mask 0x01, 2002-07-16, rev 0x0013, size 2048
+    sig 0x00000f0a, pf_mask 0x02, 2002-08-21, rev 0x0015, size 2048
+    sig 0x00000f0a, pf_mask 0x04, 2002-07-16, rev 0x0014, size 2048
+    sig 0x00000f11, pf_mask 0x02, 2003-07-29, rev 0x000a, size 2048
+    sig 0x00000f12, pf_mask 0x01, 2003-05-02, rev 0x002d, size 2048
+    sig 0x00000f12, pf_mask 0x02, 2003-05-02, rev 0x002f, size 2048
+    sig 0x00000f12, pf_mask 0x04, 2003-05-02, rev 0x002e, size 2048
+    sig 0x00000f13, pf_mask 0x04, 2003-05-08, rev 0x0005, size 2048
+    sig 0x00000f22, pf_mask 0x02, 2003-07-29, rev 0x0005, size 2048
+    sig 0x00000f24, pf_mask 0x02, 2003-06-05, rev 0x001f, size 2048
+    sig 0x00000f24, pf_mask 0x04, 2003-06-05, rev 0x001e, size 2048
+    sig 0x00000f24, pf_mask 0x08, 2003-06-05, rev 0x0020, size 2048
+    sig 0x00000f24, pf_mask 0x10, 2003-06-10, rev 0x0021, size 2048
+    sig 0x00000f25, pf_mask 0x01, 2004-08-11, rev 0x0029, size 2048
+    sig 0x00000f25, pf_mask 0x02, 2004-08-11, rev 0x002a, size 2048
+    sig 0x00000f25, pf_mask 0x04, 2004-08-11, rev 0x002b, size 2048
+    sig 0x00000f25, pf_mask 0x10, 2004-08-26, rev 0x002c, size 2048
+    sig 0x00000f26, pf_mask 0x02, 2004-08-05, rev 0x0010, size 2048
+    sig 0x00000f27, pf_mask 0x02, 2003-06-04, rev 0x0038, size 2048
+    sig 0x00000f27, pf_mask 0x04, 2003-06-04, rev 0x0037, size 2048
+    sig 0x00000f27, pf_mask 0x08, 2003-06-04, rev 0x0039, size 2048
+    sig 0x00000f29, pf_mask 0x02, 2004-08-11, rev 0x002d, size 2048
+    sig 0x00000f29, pf_mask 0x04, 2004-08-11, rev 0x002e, size 2048
+    sig 0x00000f29, pf_mask 0x08, 2004-08-11, rev 0x002f, size 2048
+    sig 0x00000f32, pf_mask 0x0d, 2004-05-11, rev 0x000a, size 2048
+    sig 0x00000f33, pf_mask 0x0d, 2005-04-21, rev 0x000c, size 2048
+    sig 0x00000f34, pf_mask 0x1d, 2005-04-21, rev 0x0017, size 7168
+    sig 0x00000f41, pf_mask 0x02, 2005-04-21, rev 0x0016, size 5120
+    sig 0x00000f41, pf_mask 0x20, 2004-11-22, rev 0x0011, size 5120
+    sig 0x00000f41, pf_mask 0x9d, 2004-11-22, rev 0x0012, size 5120
+    sig 0x00000f41, pf_mask 0xbd, 2005-04-22, rev 0x0017, size 5120
+    sig 0x00000f43, pf_mask 0x9d, 2005-04-21, rev 0x0005, size 2048
+    sig 0x00000f44, pf_mask 0x9d, 2005-04-21, rev 0x0006, size 3072
+    sig 0x00000f47, pf_mask 0x9d, 2005-04-21, rev 0x0003, size 3072
+    sig 0x00000f48, pf_mask 0x01, 2006-05-08, rev 0x000c, size 3072
+    sig 0x00000f48, pf_mask 0x02, 2005-09-01, rev 0x000b, size 3072
+    sig 0x00000f48, pf_mask 0x5f, 2005-06-30, rev 0x0007, size 3072
+    sig 0x00000f49, pf_mask 0xbd, 2005-04-21, rev 0x0003, size 2048
+    sig 0x00000f4a, pf_mask 0x5c, 2005-12-14, rev 0x0004, size 2048
+    sig 0x00000f4a, pf_mask 0x5d, 2005-06-10, rev 0x0002, size 2048
+    sig 0x00000f62, pf_mask 0x04, 2005-12-15, rev 0x000f, size 3072
+    sig 0x00000f64, pf_mask 0x01, 2005-12-15, rev 0x0002, size 3072
+    sig 0x00000f64, pf_mask 0x34, 2005-12-23, rev 0x0004, size 3072
+    sig 0x00000f65, pf_mask 0x01, 2006-04-26, rev 0x0008, size 2048
+    sig 0x00000f65, pf_mask 0x04, 2007-05-10, rev 0x000b, size 2048
+    sig 0x00000f68, pf_mask 0x22, 2006-07-14, rev 0x0009, size 2048
+    sig 0x00001632, pf_mask 0x00, 1998-06-10, rev 0x0002, size 2048
+    sig 0x00010661, pf_mask 0x01, 2007-09-19, rev 0x0038, size 4096
+    sig 0x00010661, pf_mask 0x02, 2007-03-16, rev 0x0031, size 4096
+    sig 0x00010661, pf_mask 0x04, 2007-05-01, rev 0x0036, size 4096
+    sig 0x00010661, pf_mask 0x80, 2007-03-16, rev 0x0033, size 4096
+    sig 0x00010676, pf_mask 0x01, 2008-01-19, rev 0x060b, size 4096
+    sig 0x00010676, pf_mask 0x04, 2008-01-19, rev 0x060b, size 4096
+    sig 0x00010676, pf_mask 0x10, 2008-01-19, rev 0x060b, size 4096
+    sig 0x00010676, pf_mask 0x40, 2008-01-19, rev 0x060b, size 4096
+    sig 0x00010677, pf_mask 0x10, 2008-01-19, rev 0x0703, size 4096
+    sig 0x000106c1, pf_mask 0x01, 2007-12-03, rev 0x0109, size 5120
