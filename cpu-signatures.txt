@@ -1,0 +1,98 @@
+##
+## This textfile was generated manually from public documentation
+## (Processor Specification updates).
+##
+
+# i686 only
+i686 0x00000611  # PPRO
+i686 0x00000612  # PPRO
+i686 0x00000616  # PPRO
+i686 0x00000617  # PPRO
+i686 0x00000619  # PPRO
+i686 0x00000633  # PII
+i686 0x00000634  # PII
+i686 0x00000650  # PII/Celeron/M-PII
+i686 0x00000651  # PII/Celeron
+i686 0x00000652  # PII/PII-Xeon/Celeron/M-PII
+i686 0x00000653  # PII/PII-Xeon
+i686 0x00000660  # Celeron
+i686 0x00000665  # Celeron
+i686 0x0000066a  # M-PII
+i686 0x0000066d  # ? (first seen in 2000)
+i686 0x00000671  # ? (first seen in 2000)
+i686 0x00000672  # PIII/PIII-Xeon
+i686 0x00000673  # PIII/PIII-Xeon
+i686 0x00000680  # ? (first seen in 2000)
+i686 0x00000681  # PIII/PIII-Xeon
+i686 0x00000683  # PIII/PIII-Xeon/Celeron
+i686 0x00000686  # PIII/PIII-Xeon/Celeron
+i686 0x0000068a  # PIII/PIII-Xeon/Celeron
+i686 0x00000695  # P-M
+i686 0x00000696  # ? (first seen in 2001)
+i686 0x000006a0  # PIII-Xeon
+i686 0x000006a1  # PIII-Xeon
+i686 0x000006a4  # PIII-Xeon
+i686 0x000006b1  # PIII/Celeron
+i686 0x000006b4  # PIII/Celeron
+i686 0x000006d6  # P-M
+i686 0x000006d8  # P-M
+i686 0x000006e8  # Xeon LV 32bit / Core Solo 32bit / Core Duo 32bit / Celeron M 32bit
+i686 0x000006ec  # PM-DualCore 32bit / Xeon LV 32bit
+i686 0x00000f07  # P4
+i686 0x00000f0a  # Xeon-DP/P4
+i686 0x00000f11  # Xeon-MP
+i686 0x00000f12  # Xeon-DP/P4
+i686 0x00000f13  # Celeron/P4
+i686 0x00000f22  # Xeon-MP
+i686 0x00000f24  # Xeon-DP/M-P4M/P4
+i686 0x00000f25  # Xeon-MP/Xeon-DP/P4
+i686 0x00000f26  # Xeon-MP
+i686 0x00000f27  # Xeon-DP/M-P4M/P4
+i686 0x00000f29  # Xeon-DP/M-P4M/P4
+i686 0x00000f32  # (first seen in 2004, together with P4/Celeron-D, likely step B1)
+i686 0x00000f33  # P4/Celeron D
+i686 0x00001632  # PII overdrive processor
+i686 0x000106c1  # Atom z5xx/N270 32bit
+i686 0x00020661  # Atom z6xx 32bit
+
+# x86-64/Intel64, also capable of i686
+# (may match some i686-only models that share signature with x86-64 models)
+Intel64 0x00000f34  # Celeron-D 32bit / Xeon 64bit (nocona)
+Intel64 0x00000f43  # Xeon 64bit
+Intel64 0x00000f49  # Xeon MP 64bit
+Intel64 0x00000f4a  # Xeon 64bit
+Intel64 0x00000f65  # P4/Pentium-D 64bit
+Intel64 0x00000f68  # Xeon 64bit
+Intel64 0x00020655  # Celeron Mbl P4000/u3000
+Intel64 0x000006f2  # PM-DC 64bit
+Intel64 0x000006f6  # ? (Core2/Core2-M/Xeon 51xx/Xeon 30xx/Celeron-M 64bit)
+Intel64 0x000006f7  # ? (Core2Q/Xeon5355)
+Intel64 0x000006fa  # Celeron 500 64bit
+Intel64 0x000006fb  # ? (Core2/Core2-M/Xeon32xx/Xeon30xx 64bit)
+Intel64 0x000006fd  # PM-DC/Celeron-duo 64bit
+Intel64 0x00000f41  # Celeron-D 32bit and 64bit / Xeon MP 32bit
+Intel64 0x00000f44  # Pentium-D 64bit
+Intel64 0x00000f47  # Pentium-D 64bit
+Intel64 0x00000f48  # ?
+Intel64 0x00000f62  # Pentium-D 64bit
+Intel64 0x00000f64  # Pentium-D 64bit
+Intel64 0x00010661  # Celeron 400/500 64bit
+Intel64 0x00010676  # Core2X/Core2duo/P-dual core
+Intel64 0x00010677  # Core2X
+Intel64 0x0001067a  # Core2X/Core2duo/P-dual core/Celeron E3000
+Intel64 0x000106a4  # Ci7
+Intel64 0x000106a5  # Ci7
+Intel64 0x000106c2  # Atom z5xx/N270 32bit / Atom 200/300 64bit
+Intel64 0x000106ca  # Atom n500/n400/d500/d400 64bit
+Intel64 0x000106d1  # ?
+Intel64 0x000106e4  # ?
+Intel64 0x000106e5  # Ci7-800 / Ci5-700
+Intel64 0x00020652  # P-Mbl P6000/u5000 / Ci5 / Ci3
+Intel64 0x000206a7  # ? (Ci7/Ci5/Ci3/Ci7-M/Ci3-M/Ci5-M/P-DC-M/M-Celeron/Xeon E3 64bit)
+Intel64 0x000206c2  # Ci7-900X
+Intel64 0x000206d6  # ? (Ci7 3930/Xeon E5)
+Intel64 0x000206d7  # ? (Ci7 3820)
+Intel64 0x000206e6  # ?
+Intel64 0x000206f2  # ? (Xeon E7)
+Intel64 0x00030661  # Atom D2xxx/N2xxx 64bit
+Intel64 0x000306a9  # ? (Ci5-3570/Ci7-3770)

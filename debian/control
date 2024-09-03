@@ -1,15 +1,24 @@
-Source: template-repository
-Section: unknown
-Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Source: intel-microcode
+Section: non-free-firmware/admin
+Priority: standard
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Uploaders: Giacomo Catenazzi <cate@debian.org>
+Build-Depends: debhelper (>= 9), iucode-tool (>= 0.9)
+Standards-Version: 4.1.1
+Homepage: https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
+Vcs-Git: https://salsa.debian.org/hmh/intel-microcode.git
+Vcs-Browser: https://salsa.debian.org/hmh/intel-microcode
+XS-Autobuild: yes
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: intel-microcode
+Architecture: i386 amd64 x32
+Depends: ${misc:Depends}, iucode-tool (>= 1.0)
+Recommends: initramfs-tools (>= 0.113~)
+Conflicts: microcode.ctl (<< 0.18~0)
+Description: Processor microcode firmware for Intel CPUs
+ This package contains updated system processor microcode for
+ Intel i686 and Intel X86-64 processors.  Intel releases microcode
+ updates to correct processor behavior as documented in the
+ respective processor specification updates.
+ .
+ For AMD processors, please refer to the amd64-microcode package.
