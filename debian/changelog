@@ -1,3 +1,9 @@
+intel-microcode (3.20241112.1+0deepin) unstable; urgency=medium
+
+  * New upstream microcode 20241112. 
+
+ -- lichenggang <lichenggang@deepin.org>  Fri, 15 Nov 2024 17:43:59 +0800
+
 intel-microcode (3.20241029.1+0deepin) unstable; urgency=medium
 
   * New upstream microcode 20241029.
