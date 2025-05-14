@@ -1,3 +1,9 @@
+intel-microcode (3.20250512.1) unstable; urgency=medium
+
+  * New upstream microcode 20250512
+
+ -- bluesky <chenchongbiao@deepin.org>  Wed, 14 May 2025 10:24:10 +0800
+
 intel-microcode (3.20250211.1) unstable; urgency=medium
 
   * New upstream microcode datafile 20250211 (closes: #1095805)
