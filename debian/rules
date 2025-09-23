@@ -17,8 +17,10 @@ export DH_ALWAYS_EXCLUDE=CVS:.svn:.git
 
 ifneq (,$(filter amd64 x32,$(DEB_HOST_ARCH)))
 IUCODE_FILE := intel-microcode-64.bin
+FWDIR_TARGET := intel-ucode-fw64
 else
 IUCODE_FILE := intel-microcode.bin
+FWDIR_TARGET := intel-ucode-fw
 endif
 
 # Work around Debian bug #688794
@@ -32,7 +34,7 @@ override_dh_auto_install:
 	dh_install
 
 	# split microcode pack
-	$(IUCODE_TOOL) -q --write-firmware="$(PKGDIR)/usr/lib/firmware/intel-ucode" $(IUCODE_FILE)
+	$(MAKE) FWDIR="$(PKGDIR)/usr/lib/firmware/intel-ucode" $(FWDIR_TARGET)
 
 	# apply best-effort blacklist
 	if [ -r debian/ucode-blacklist.txt ] ; then \

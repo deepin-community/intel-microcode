@@ -29,7 +29,8 @@ IUC_OLDIES_EXCLUDE :=
 IUC_EXCLUDE :=
 
 # 0x106c0: alpha hardware, seen in a very very old microcode data file
-IUC_EXCLUDE += -s !0x106c0
+# 0x50656, 0xc06f1: QS steppings, removed by upstream 20250512
+IUC_EXCLUDE += -s !0x106c0 -s !0x50656 -s !0xc06f1
 
 # INCLUDING MICROCODES:
 #
@@ -155,6 +156,17 @@ intel-microcode-64.bin: intel-microcode.bin
 	@$(IUCODE_TOOL) $(IUC_FLAGS) \
 		$(shell sed -n -r -e '/^i.86/ { s/^[^ ]+ +/-s !/;s/ +\#.*//;p}' cpu-signatures.txt) $(IUC_EXCLUDE) \
 		--overwrite -w "$@" $^
+
+# Aux. targets for packaging: make FWDIR=${PREFIX}/lib/firmware intel-ucode-fw/fw64
+intel-ucode-fw: intel-microcode.bin
+	@test -d "$(FWDIR)" && \
+		$(IUCODE_TOOL) $(IUC_EXCLUDE) --overwrite --write-firmware="$(FWDIR)" $^
+
+intel-ucode-fw64: intel-microcode-64.bin
+	@test -d "$(FWDIR)" && \
+		$(IUCODE_TOOL) $(IUC_EXCLUDE) --overwrite --write-firmware="$(FWDIR)" $^
+
+.PHONY: intel-ucode-fw intel-ucode-fw64
 
 distclean: clean
 clean:
