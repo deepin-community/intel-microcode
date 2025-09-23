@@ -1,8 +1,201 @@
-intel-microcode (3.20250512.1) unstable; urgency=medium
+intel-microcode (3.20250812.1) unstable; urgency=medium
 
-  * New upstream microcode 20250512
+  [ Henrique de Moraes Holschuh ]
+  * New upstream microcode datafile 20250812 (closes: #1110983, #1112168)
+    - Mitgations for INTEL-SA-01249 (processor Stream Cache):
+      CVE-2025-20109: Improper Isolation or Compartmentalization in the
+      stream cache mechanism for some Intel Processors may allow an
+      authenticated user to potentially enable escalation of privilege via
+      local access.  Intel also disclosed that several processors models
+      had already received this mitigation on the previous microcode
+      release, 20250512.
+    - Mitigations for INTEL-SA-01308:
+      CVE-2025-22840: Sequence of processor instructions leads to
+      unexpected behavior for some Intel Xeon 6 Scalable processors may
+      allow an authenticated user to potentially enable escalation of
+      privilege via local access.
+    - Mitigations for INTEL-SA-01310 (OOBM services module):
+      CVE-2025-22839: Insufficient granularity of access control in the
+      OOB-MSM for some Intel Xeon 6 Scalable processors may allow a
+      privileged user to potentially enable escalation of privilege via
+      adjacent access.
+    - Mitigations for INTEL-SA-01311 (Intel TDX):
+      CVE-2025-22889: Improper handling of overlap between protected
+      memory ranges for some Intel Xeon 6 processors with Intel TDX may
+      allow a privileged user to potentially enable escalation of
+      privilege via local access.
+    - Mitigations for INTEL-SA-01313:
+      CVE-2025-20053: Improper buffer restrictions for some Intel Xeon
+      Processor firmware with SGX enabled may allow a privileged user to
+      potentially enable escalation of privilege via local access.
+      CVE-2025-21090: Missing reference to active allocated resource for
+      some Intel Xeon processors may allow an authenticated user to
+      potentially enable denial of service via local access.
+      CVE-2025-24305: Insufficient control flow management in the Alias
+      Checking Trusted Module (ACTM) firmware for some Intel Xeon
+      processors may allow a privileged user to potentially enable
+      escalation of privilege via local access.
+    - Mitigations for INTEL-SA-01367 (Intel SGX, TDX):
+      CVE-2025-26403: Out-of-bounds write in the memory subsystem for some
+      Intel Xeon 6 processors when using Intel SGX or Intel TDX may allow
+      a privileged user to potentially enable escalation of privilege via
+      local access.
+      CVE-2025-32086: Improperly implemented security check for standard
+      in the DDRIO configuration for some Intel Xeon 6 Processors when
+      using Intel SGX or Intel TDX may allow a privileged user to
+      potentially enable escalation of privilege via local access.
+    - Fixes for unspecified functional issues on several Intel Core and
+      Intel Xeon processor models.
+  * Updated microcodes:
+    sig 0x000606a6, pf_mask 0x87, 2025-03-11, rev 0xd000410, size 309248
+    sig 0x000606c1, pf_mask 0x10, 2025-03-06, rev 0x10002e0, size 301056
+    sig 0x000806f8, pf_mask 0x87, 2025-04-04, rev 0x2b000643, size 592896
+    sig 0x000806f7, pf_mask 0x87, 2025-04-04, rev 0x2b000643
+    sig 0x000806f6, pf_mask 0x87, 2025-04-04, rev 0x2b000643
+    sig 0x000806f5, pf_mask 0x87, 2025-04-04, rev 0x2b000643
+    sig 0x000806f4, pf_mask 0x87, 2025-04-04, rev 0x2b000643
+    sig 0x000806f8, pf_mask 0x10, 2025-04-08, rev 0x2c000401, size 625664
+    sig 0x000806f6, pf_mask 0x10, 2025-04-08, rev 0x2c000401
+    sig 0x000806f5, pf_mask 0x10, 2025-04-08, rev 0x2c000401
+    sig 0x000806f4, pf_mask 0x10, 2025-04-08, rev 0x2c000401
+    sig 0x000a06a4, pf_mask 0xe6, 2025-03-19, rev 0x0025, size 140288
+    sig 0x000a06d1, pf_mask 0x95, 2025-05-15, rev 0x10003d0, size 1667072
+    sig 0x000a06d1, pf_mask 0x20, 2025-05-15, rev 0xa000100, size 1638400
+    sig 0x000a06f3, pf_mask 0x01, 2025-05-03, rev 0x3000362, size 1530880
+    sig 0x000b06a2, pf_mask 0xe0, 2025-02-24, rev 0x4129, size 224256
+    sig 0x000b06a3, pf_mask 0xe0, 2025-02-24, rev 0x4129
+    sig 0x000b06a8, pf_mask 0xe0, 2025-02-24, rev 0x4129
+    sig 0x000b06d1, pf_mask 0x80, 2025-05-21, rev 0x0123, size 80896
+    sig 0x000c0662, pf_mask 0x82, 2025-05-14, rev 0x0119, size 90112
+    sig 0x000c06a2, pf_mask 0x82, 2025-05-14, rev 0x0119
+    sig 0x000c0652, pf_mask 0x82, 2025-05-14, rev 0x0119
+    sig 0x000c0664, pf_mask 0x82, 2025-05-14, rev 0x0119
+    sig 0x000c06f2, pf_mask 0x87, 2025-04-15, rev 0x210002b3, size 564224
+    sig 0x000c06f1, pf_mask 0x87, 2025-04-15, rev 0x210002b3
+  * update entry for 3.20250512.1 with new information
+  * source: update symlinks to reflect id of the latest release, 20250812
 
- -- bluesky <chenchongbiao@deepin.org>  Wed, 14 May 2025 10:24:10 +0800
+  [ Ben Hutchings ]
+  * debian/tests/initramfs: Update to work with forky's initramfs-tools.
+    In version 0.149 of initramfs-tools, unmkinitramfs was changed to no
+    longer create early/ and main/ subdirectories.  Update the microcode
+    file check to work with both old and new behaviours.
+
+ -- Henrique de Moraes Holschuh <hmh@debian.org>  Sat, 13 Sep 2025 18:30:55 -0300
+
+intel-microcode (3.20250512.1) unstable; urgency=high
+
+  * New upstream microcode datafile 20250512 (closes: #1105172)
+    - Mitigations for INTEL-SA-01153 (ITS: Indirect Target Selection):
+      CVE-2024-28956: Processor may incompletely mitigate Branch Target
+      Injection due to indirect branch predictions that are not fully
+      constrained by eIBRS nor by the IBPB barrier.  Part of the "Training
+      Solo" set of vulnerabilities.
+    - Mitigations for INTEL-SA-01244:
+      CVE-2025-20103: Insufficient resource pool in the core management
+      mechanism for some Intel Processors may allow an authenticated user
+      to potentially enable denial of service via local access.
+      CVE-2025-20054: Uncaught exception in the core management mechanism
+      for some Intel Processors may allow an authenticated user to
+      potentially enable denial of service via local access.
+    - Mitigations for INTEL-SA-01247:
+      CVE-2024-43420, CVE-2025-20623: Exposure of sensitive information
+      caused by shared microarchitectural predictor state that influences
+      transient execution for some Intel Atom and some Intel Core
+      processors (10th Generation) may allow an authenticated user to
+      potentially enable information disclosure via local access.
+      CVE-2024-45332 (Branch Privilege Injection): Exposure of sensitive
+      information caused by shared microarchitectural predictor state that
+      influences transient execution in the indirect branch predictors for
+      some Intel Processors may allow an authenticated user to potentially
+      enable information disclosure via local access.
+    - Mitigations for INTEL-SA-01322:
+      CVE-2025-24495 (Training Solo): Incorrect initialization of resource
+      in the branch prediction unit for some Intel Core Ultra Processors
+      may allow an authenticated user to potentially enable information
+      disclosure via local access (IBPB bypass)
+      CVE-2025-20012 (Training Solo): Incorrect behavior order for some
+      Intel Core Ultra Processors may allow an unauthenticated user to
+      potentially enable information disclosure via physical access.
+    - Improved fix for the Vmin Shift Instability for the Intel Core 13th
+      and 14th gen processors under low-activity scenarios (sig 0xb0671).
+      This microcode update is supposed to be delivered as a system
+      firmware update, but according to Intel it should be effective when
+      loaded by the operating system if the system firmware has revision
+      0x12e.
+    - Mitgations for INTEL-SA-01249 (processor Stream Cache):
+      CVE-2025-20109: Improper Isolation or Compartmentalization in the
+      stream cache mechanism for some Intel Processors may allow an
+      authenticated user to potentially enable escalation of privilege via
+      local access.  This information was disclosed by Intel for release
+      20250812.
+    - Fixes for unspecified functional issues on several processor models
+  * New microcodes or new extended signatures:
+    sig 0x000a06d1, pf_mask 0x95, 2025-02-07, rev 0x10003a2, size 1664000
+    sig 0x000a06d1, pf_mask 0x20, 2025-02-07, rev 0xa0000d1, size 1635328
+    sig 0x000b0650, pf_mask 0x80, 2025-03-18, rev 0x000a, size 136192
+    sig 0x000b06d1, pf_mask 0x80, 2025-03-18, rev 0x011f, size 79872
+    sig 0x000c0662, pf_mask 0x82, 2025-03-20, rev 0x0118, size 90112
+    sig 0x000c06a2, pf_mask 0x82, 2025-03-20, rev 0x0118
+    sig 0x000c0652, pf_mask 0x82, 2025-03-20, rev 0x0118
+    sig 0x000c0664, pf_mask 0x82, 2025-03-20, rev 0x0118
+  * Updated microcodes:
+    sig 0x00050657, pf_mask 0xbf, 2024-12-12, rev 0x5003901, size 39936
+    sig 0x0005065b, pf_mask 0xbf, 2024-12-12, rev 0x7002b01, size 30720
+    sig 0x000606a6, pf_mask 0x87, 2025-01-07, rev 0xd000404, size 309248
+    sig 0x000606c1, pf_mask 0x10, 2025-01-07, rev 0x10002d0, size 300032
+    sig 0x000706a8, pf_mask 0x01, 2024-12-05, rev 0x0026, size 76800
+    sig 0x000706e5, pf_mask 0x80, 2025-01-07, rev 0x00ca, size 115712
+    sig 0x000806c1, pf_mask 0x80, 2024-12-01, rev 0x00bc, size 112640
+    sig 0x000806c2, pf_mask 0xc2, 2024-12-01, rev 0x003c, size 99328
+    sig 0x000806d1, pf_mask 0xc2, 2024-12-11, rev 0x0056, size 105472
+    sig 0x000806ec, pf_mask 0x94, 2024-11-17, rev 0x0100, size 106496
+    sig 0x000806f8, pf_mask 0x87, 2025-01-28, rev 0x2b000639, size 591872
+    sig 0x000806f7, pf_mask 0x87, 2025-01-28, rev 0x2b000639
+    sig 0x000806f6, pf_mask 0x87, 2025-01-28, rev 0x2b000639
+    sig 0x000806f5, pf_mask 0x87, 2025-01-28, rev 0x2b000639
+    sig 0x000806f4, pf_mask 0x87, 2025-01-28, rev 0x2b000639
+    sig 0x000806f8, pf_mask 0x10, 2025-01-28, rev 0x2c0003f7, size 624640
+    sig 0x000806f6, pf_mask 0x10, 2025-01-28, rev 0x2c0003f7
+    sig 0x000806f5, pf_mask 0x10, 2025-01-28, rev 0x2c0003f7
+    sig 0x000806f4, pf_mask 0x10, 2025-01-28, rev 0x2c0003f7
+    sig 0x00090672, pf_mask 0x07, 2024-12-12, rev 0x003a, size 226304
+    sig 0x00090675, pf_mask 0x07, 2024-12-12, rev 0x003a
+    sig 0x000b06f2, pf_mask 0x07, 2024-12-12, rev 0x003a
+    sig 0x000b06f5, pf_mask 0x07, 2024-12-12, rev 0x003a
+    sig 0x000b06f6, pf_mask 0x07, 2024-12-12, rev 0x003a
+    sig 0x000b06f7, pf_mask 0x07, 2024-12-12, rev 0x003a
+    sig 0x000906a3, pf_mask 0x80, 2024-12-12, rev 0x0437, size 224256
+    sig 0x000906a4, pf_mask 0x80, 2024-12-12, rev 0x0437
+    sig 0x000906a4, pf_mask 0x40, 2024-12-06, rev 0x000a, size 119808
+    sig 0x000906ed, pf_mask 0x22, 2024-11-14, rev 0x0104, size 106496
+    sig 0x000a0652, pf_mask 0x20, 2024-11-14, rev 0x0100, size 97280
+    sig 0x000a0653, pf_mask 0x22, 2024-11-14, rev 0x0100, size 98304
+    sig 0x000a0655, pf_mask 0x22, 2024-11-14, rev 0x0100, size 97280
+    sig 0x000a0660, pf_mask 0x80, 2024-11-14, rev 0x0102, size 98304
+    sig 0x000a0661, pf_mask 0x80, 2024-11-14, rev 0x0100, size 97280
+    sig 0x000a0671, pf_mask 0x02, 2024-12-01, rev 0x0064, size 108544
+    sig 0x000a06a4, pf_mask 0xe6, 2025-02-13, rev 0x0024, size 140288
+    sig 0x000a06f3, pf_mask 0x01, 2025-02-10, rev 0x3000341, size 1542144
+    sig 0x000b0671, pf_mask 0x32, 2025-03-17, rev 0x012f, size 219136
+    sig 0x000b0674, pf_mask 0x32, 2025-03-17, rev 0x012f
+    sig 0x000b06a2, pf_mask 0xe0, 2025-01-15, rev 0x4128, size 224256
+    sig 0x000b06a3, pf_mask 0xe0, 2025-01-15, rev 0x4128
+    sig 0x000b06a8, pf_mask 0xe0, 2025-01-15, rev 0x4128
+    sig 0x000b06e0, pf_mask 0x19, 2024-12-06, rev 0x001d, size 139264
+    sig 0x000c06f2, pf_mask 0x87, 2025-03-14, rev 0x210002a9, size 563200
+    sig 0x000c06f1, pf_mask 0x87, 2025-03-14, rev 0x210002a9
+  * Removed microcodes (ES/QS steppings):
+    sig 0x00050656, pf_mask 0xbf, 2023-07-28, rev 0x4003605, size 38912
+    sig 0x000c06f1, pf_mask 0x87, 2025-03-14, rev 0x210002a9 [EXCLUDED]
+  * Makefile: exclude QS/ES steppings 0x50656, 0xc06f1.
+  * Makefile: add targets to create split F-M-S /lib/firmware dir
+  * debian/rules: use new intel-ucode-{fw,fw64} Makefile targets
+    Removes from the binary package the F-M-S files for extended signatures
+    that were excluded by IUC_EXCLUDE.
+  * source: update symlinks to reflect id of the latest release, 20250512
+
+ -- Henrique de Moraes Holschuh <hmh@debian.org>  Sat, 17 May 2025 01:35:08 -0300
 
 intel-microcode (3.20250211.1) unstable; urgency=medium
 
