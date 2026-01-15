@@ -1,3 +1,50 @@
+2025-11-11:
+  * New upstream microcode datafile 20251111
+    - Fixes for unspecified functional issues on several Intel, Intel
+      Core and Intel Xeon processor models.
+    - Fixes errata RPL070/ADL083/LNL047/ALR054/SPR154/EMR147:
+      REP SCASB, REP CMPSB may return incorrect results when racing
+      memory access with another core or thread, on Raptor Lake, Arrow
+      Lake, Lunar Lake, 4th/5th gen Xeon Scalable and maybe other
+      processor models
+  * New microcodes:
+    + sig 0x000a06e1, pf_mask 0x97, 2025-06-27, rev 0x1000273, size 1635328
+  * Updated microcodes:
+    + sig 0x000806f8, pf_mask 0x87, 2025-05-29, rev 0x2b000650, size 593920
+    + sig 0x000806f7, pf_mask 0x87, 2025-05-29, rev 0x2b000650
+    + sig 0x000806f6, pf_mask 0x87, 2025-05-29, rev 0x2b000650
+    + sig 0x000806f5, pf_mask 0x87, 2025-05-29, rev 0x2b000650
+    + sig 0x000806f4, pf_mask 0x87, 2025-05-29, rev 0x2b000650
+    + sig 0x000806f8, pf_mask 0x10, 2025-05-29, rev 0x2c000410, size 625664
+    + sig 0x000806f6, pf_mask 0x10, 2025-05-29, rev 0x2c000410
+    + sig 0x000806f5, pf_mask 0x10, 2025-05-29, rev 0x2c000410
+    + sig 0x000806f4, pf_mask 0x10, 2025-05-29, rev 0x2c000410
+    + sig 0x00090672, pf_mask 0x07, 2025-10-12, rev 0x003d, size 226304
+    + sig 0x00090675, pf_mask 0x07, 2025-10-12, rev 0x003d
+    + sig 0x000b06f2, pf_mask 0x07, 2025-10-12, rev 0x003d
+    + sig 0x000b06f5, pf_mask 0x07, 2025-10-12, rev 0x003d
+    + sig 0x000b06f6, pf_mask 0x07, 2025-10-12, rev 0x003d
+    + sig 0x000b06f7, pf_mask 0x07, 2025-10-12, rev 0x003d
+    + sig 0x000906a3, pf_mask 0x80, 2025-10-12, rev 0x043a, size 224256
+    + sig 0x000906a4, pf_mask 0x80, 2025-10-12, rev 0x043a
+    + sig 0x000906a4, pf_mask 0x40, 2025-06-13, rev 0x000b, size 119808
+    + sig 0x000a06d1, pf_mask 0x95, 2025-07-23, rev 0x10003f0, size 1670144
+    + sig 0x000a06d1, pf_mask 0x20, 2025-08-29, rev 0xa000124, size 1642496
+    + sig 0x000a06f3, pf_mask 0x01, 2025-07-30, rev 0x3000382, size 1534976
+    + sig 0x000b0671, pf_mask 0x32, 2025-10-08, rev 0x0132, size 219136
+    + sig 0x000b0674, pf_mask 0x32, 2025-10-08, rev 0x0132
+    + sig 0x000b06a2, pf_mask 0xe0, 2025-10-08, rev 0x6133, size 224256
+    + sig 0x000b06a3, pf_mask 0xe0, 2025-10-08, rev 0x6133
+    + sig 0x000b06a8, pf_mask 0xe0, 2025-10-08, rev 0x6133
+    + sig 0x000b06d1, pf_mask 0x80, 2025-08-28, rev 0x0125, size 80896
+    + sig 0x000b06e0, pf_mask 0x19, 2025-05-16, rev 0x001e, size 139264
+    + sig 0x000c0662, pf_mask 0x82, 2025-06-30, rev 0x011a, size 90112
+    + sig 0x000c06a2, pf_mask 0x82, 2025-06-30, rev 0x011a
+    + sig 0x000c0652, pf_mask 0x82, 2025-06-30, rev 0x011a
+    + sig 0x000c0664, pf_mask 0x82, 2025-06-30, rev 0x011a
+    + sig 0x000c06f2, pf_mask 0x87, 2025-05-29, rev 0x210002c0, size 564224
+    + sig 0x000c06f1, pf_mask 0x87, 2025-05-29, rev 0x210002c0
+
 2025-08-12:
   * New upstream microcode datafile 20250812
     - Mitgations for INTEL-SA-01249 (processor Stream Cache):
