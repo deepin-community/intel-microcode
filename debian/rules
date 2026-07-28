@@ -62,3 +62,7 @@ override_dh_auto_install:
 override_dh_installchangelogs:
 	dh_installchangelogs changelog
 
+override_dh_installdocs:
+	dh_installdocs
+	(cd "$(DEBDIR)/$(PACKAGE)/usr/share/doc/$(PACKAGE)/" && sed -i -E 's/\r//g' *.md)
+
