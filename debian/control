@@ -13,7 +13,7 @@ XS-Autobuild: yes
 Package: intel-microcode
 Architecture: i386 amd64 x32
 Depends: ${misc:Depends}, iucode-tool (>= 1.0)
-Recommends: initramfs-tools (>= 0.113~)
+Recommends: initramfs-tools (>= 0.113~) | dracut (>= 044~) | tiny-initramfs
 Conflicts: microcode.ctl (<< 0.18~0)
 Description: Processor microcode firmware for Intel CPUs
  This package contains updated system processor microcode for
