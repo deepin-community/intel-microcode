@@ -1,3 +1,122 @@
+intel-microcode (3.20260925.1) unstable; urgency=emergency
+
+  * New upstream microcode datafile 20260925 (closes: #1149038)
+    - Reinstates the mitigations for the security issues mentioned on
+      3.20260811.1 for the Core Ultra Meteor Lake C0, sig 0xa06a4.
+    - Fix critical functional issue (fatal MCEs) on the Core Ultra Meteor Lake
+      C0 on some platforms (closes: #1152966)
+  * Updated microcodes:
+    + sig 0x000a06a4, pf_mask 0xe6, 2026-09-03, rev 0x002b, size 141312
+  * source: update symlinks to reflect id of the latest release, 20260925
+  * changelog: update for new upstream release
+  * debian/changelog: create entry for 3.20260812.1 (unreleased) to keep
+    upstream release information separate, given its security-related nature.
+
+ -- Henrique de Moraes Holschuh <hmh@debian.org>  Wed, 04 Nov 2026 14:26:43 -0300
+
+intel-microcode (3.20260812.1) UNRELEASED; urgency=high
+
+  * New upstream microcode datafile 20260812
+    - Revert the microcode update from 20260811 for the Core Ultra Meteor
+      Lake C0 to the previous release, due to severe functional issues on some
+      platforms.  This effectively removes the security mitigations from release
+      20260811 on this specific processor.
+  * Downgraded microcodes:
+    + sig 0x000a06a4, pf_mask 0xe6, 2025-09-24, rev 0x0028, size 141312
+  * New upstream microcode datafile 20260811 (closes: #1144154)
+    - Mitigation for several security issues: (closes: #1144158)
+      INTEL-SA-01379 (CVE-2025-31936), INTEL-SA-01404 (CVE-2025-31938),
+      INTEL-SA-01423 (CVE-2026-20917), INTEL-SA-01428 (CVE-2025-35973),
+      INTEL-SA-01435 (CVE-2026-20716), INTEL-SA-01441 (CVE-2026-20760),
+      INTEL-SA-01442 (CVE-2026-20713, CVE-2026-20901),
+      INTEL-SA-01443 (CVE-2026-20707)
+    - Fixes for undisclosed functional issues on several processors
+  * Updated microcodes:
+    + sig 0x000606a6, pf_mask 0x87, 2026-03-09, rev 0xd000433, size 309248
+    + sig 0x000606c1, pf_mask 0x10, 2026-03-09, rev 0x1000301, size 301056
+    + sig 0x000706e5, pf_mask 0x80, 2026-02-12, rev 0x00ce, size 115712
+    + sig 0x000806f8, pf_mask 0x87, 2026-03-02, rev 0x2b000685, size 596992
+    + sig 0x000806f7, pf_mask 0x87, 2026-03-02, rev 0x2b000685
+    + sig 0x000806f6, pf_mask 0x87, 2026-03-02, rev 0x2b000685
+    + sig 0x000806f5, pf_mask 0x87, 2026-03-02, rev 0x2b000685
+    + sig 0x000806f4, pf_mask 0x87, 2026-03-02, rev 0x2b000685
+    + sig 0x000806f8, pf_mask 0x10, 2026-03-02, rev 0x2c000435, size 628736
+    + sig 0x000806f6, pf_mask 0x10, 2026-03-02, rev 0x2c000435
+    + sig 0x000806f5, pf_mask 0x10, 2026-03-02, rev 0x2c000435
+    + sig 0x000806f4, pf_mask 0x10, 2026-03-02, rev 0x2c000435
+    + sig 0x000a0671, pf_mask 0x02, 2026-02-12, rev 0x0066, size 109568
+    + sig 0x000a06d1, pf_mask 0x95, 2026-04-27, rev 0x1000434, size 1677312
+    + sig 0x000a06d1, pf_mask 0x20, 2026-03-24, rev 0xa000151, size 1647616
+    + sig 0x000a06e1, pf_mask 0x97, 2026-04-15, rev 0x1000309, size 1648640
+    + sig 0x000a06f3, pf_mask 0x01, 2026-03-16, rev 0x30003b2, size 1540096
+    + sig 0x000b0650, pf_mask 0x80, 2026-01-15, rev 0x000e, size 137216
+    + sig 0x000b0671, pf_mask 0x36, 2026-02-18, rev 0x0137, size 246784
+    + sig 0x000b0674, pf_mask 0x36, 2026-02-18, rev 0x0137
+    + sig 0x000d0670, pf_mask 0x36, 2026-02-18, rev 0x0137
+    + sig 0x000b06d1, pf_mask 0x80, 2026-02-19, rev 0x0128, size 81920
+    + sig 0x000c0662, pf_mask 0x82, 2026-02-18, rev 0x0122, size 91136
+    + sig 0x000c06a2, pf_mask 0x82, 2026-02-18, rev 0x0122
+    + sig 0x000c0652, pf_mask 0x82, 2026-02-18, rev 0x0122
+    + sig 0x000c0664, pf_mask 0x82, 2026-02-18, rev 0x0122
+    + sig 0x000c06c1, pf_mask 0x94, 2026-04-20, rev 0x011c, size 165888
+    + sig 0x000c06c2, pf_mask 0x94, 2026-04-20, rev 0x011c
+    + sig 0x000c06c3, pf_mask 0x94, 2026-04-20, rev 0x011c
+    + sig 0x000e0652, pf_mask 0x94, 2026-04-20, rev 0x011c
+    + sig 0x000c06f2, pf_mask 0x87, 2026-03-02, rev 0x210002f4, size 570368
+    + sig 0x000c06f2, pf_mask 0x87, 2026-03-02, rev 0x210002f4
+    + sig 0x000c06f1, pf_mask 0x87, 2026-03-02, rev 0x210002f4
+  * New microcodes:
+    + sig 0x000d0650, pf_mask 0xc0, 2026-05-20, rev 0x000c, size 84992
+    + sig 0x000d0651, pf_mask 0xc0, 2026-05-20, rev 0x000c
+  * New signatures:
+    + sig 0x000e0652, pf_mask 0x94, 2026-04-20, rev 0x011c, size 165888
+    + sig 0x000d0670, pf_mask 0x36, 2026-02-18, rev 0x0137, size 246784
+    + sig 0x000b0674, pf_mask 0x36, 2026-02-18, rev 0x0137, size 246784
+  * source: update symlinks to reflect id of the latest release, 20260812
+  * changelog: update for new upstream releases
+
+ -- Henrique de Moraes Holschuh <henrique@nogrod.ceptro.br>  Tue, 03 Nov 2026 23:05:22 -0300
+
+intel-microcode (3.20260512.1) UNRELEASED; urgency=medium
+
+  * New upstream microcode datafile 20260512 (closes: #1137032, #1136460)
+    - mitigations for INTEL-SA-01420 (CVE-2025-35979)
+      Exposure of sensitive information caused by shared microarchitectural
+      predictor state that influences transient execution for some Intel
+      Processors within VMX non-root (guest) operation.  Mitigations for
+      Intel Arrow Lake (Core Ultra 200S: sigs 0xc0652, 0xc0662), Lunar Lake
+      (Core Ultra series 2: sig 0xb06d1), and Panther Lake H
+      4P+8E+4LP_E+12Xe (Core Ultra series 3: sig 0xc06c2)
+    - Fixes for undisclosed functional issues on several processors
+  * Updated microcodes:
+    + sig 0x000806f8, pf_mask 0x87, 2025-12-17, rev 0x2b000670, size 595968
+    + sig 0x000806f7, pf_mask 0x87, 2025-12-17, rev 0x2b000670
+    + sig 0x000806f6, pf_mask 0x87, 2025-12-17, rev 0x2b000670
+    + sig 0x000806f5, pf_mask 0x87, 2025-12-17, rev 0x2b000670
+    + sig 0x000806f4, pf_mask 0x87, 2025-12-17, rev 0x2b000670
+    + sig 0x000a06d1, pf_mask 0x95, 2026-01-29, rev 0x1000423, size 1671168
+    + sig 0x000a06d1, pf_mask 0x20, 2026-01-29, rev 0xa000142, size 1642496
+    + sig 0x000a06e1, pf_mask 0x97, 2026-02-26, rev 0x1000307, size 1646592
+    + sig 0x000a06f3, pf_mask 0x01, 2026-01-30, rev 0x30003a3, size 1533952
+    + sig 0x000b06d1, pf_mask 0x80, 2025-12-10, rev 0x0126, size 80896
+    + sig 0x000c0662, pf_mask 0x82, 2025-12-15, rev 0x0121, size 91136
+    + sig 0x000c06a2, pf_mask 0x82, 2025-12-15, rev 0x0121
+    + sig 0x000c0652, pf_mask 0x82, 2025-12-15, rev 0x0121
+    + sig 0x000c0664, pf_mask 0x82, 2025-12-15, rev 0x0121
+    + sig 0x000c06f2, pf_mask 0x87, 2025-12-17, rev 0x210002e0, size 567296
+    + sig 0x000c06f1, pf_mask 0x87, 2025-12-17, rev 0x210002e0
+  * New microcodes:
+    + sig 0x000c06c1, pf_mask 0x90, 2026-03-24, rev 0x011b, size 163840
+    + sig 0x000c06c2, pf_mask 0x90, 2026-03-24, rev 0x011b
+    + sig 0x000c06c3, pf_mask 0x90, 2026-03-24, rev 0x011b
+  * debian/control: add dracut and tiny-initramfs as recommends
+    (closes: #1088079)
+  * debian/control: depend on linux-image-generic for autopkgtest on Ubuntu
+  * source: update symlinks to reflect id of the latest release, 20260512
+  * changelog: update for new upstream releases
+
+ -- Henrique de Moraes Holschuh <hmh@debian.org>  Sun, 24 May 2026 19:01:44 -0300
+
 intel-microcode (3.20260227.1) unstable; urgency=medium
 
   * New upstream microcode datafile 20260227 (closes: #1129232)

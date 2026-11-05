@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex -o pipefail
 
-update-initramfs -kall -u
+update-initramfs -kall -u -c
 INITRDS=(/boot/initrd.img-*)
 
 unmkinitramfs "${INITRDS[0]}" initramfs/

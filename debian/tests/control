@@ -2,6 +2,6 @@ Tests: initramfs
 Architecture: amd64
 Depends:
  @,
- linux-image-amd64,
+ linux-image-generic,
  initramfs-tools,
 Restrictions: needs-root, allow-stderr, superficial
